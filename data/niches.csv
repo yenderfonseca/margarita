@@ -1,0 +1,57 @@
+niche,group,keywords,library_evidence,styles,playbook,compliance
+Fashion & Apparel,fashion,fashion apparel clothing denim knitwear basics,"Anatomy study: image 43%, headline 13%","editorial,bold-retail,quiet-luxury",fashion_apparel,
+Streetwear,fashion,streetwear drops hype sneakers graphic tees skate,none (nearest: Fashion & Apparel),"mono-brutal,bold-retail,dark-premium",fashion_apparel,
+Luxury Fashion & Accessories,fashion,luxury designer leather goods handbags couture,none (nearest: Fashion & Apparel),"quiet-luxury,editorial,dark-premium",fashion_apparel,
+Swimwear & Intimates,fashion,swimwear bikini lingerie bras loungewear,none (nearest: Fashion & Apparel),"editorial,soft-pop,quiet-luxury",fashion_apparel,Keep imagery and copy suitable for a general inbox
+Footwear,fashion,shoes boots sneakers sandals running shoes,none (nearest: Fashion & Apparel),"bold-retail,editorial,clean-tech",fashion_apparel,
+Jewelry,fashion,jewelry rings necklaces silver gold gemstones engagement,image-led (niches.csv; no % in the anatomy study),"dark-premium,quiet-luxury,editorial",none,"Metal purity, gemstone and origin claims only as the site states them"
+Watches & Eyewear,fashion,watches eyewear sunglasses glasses frames,none (nearest: Fashion & Apparel),"dark-premium,quiet-luxury,clean-tech",fashion_apparel,
+Kids & Baby,fashion,kids baby toddler nursery children,none (nearest: Fashion & Apparel),"playful-color,soft-pop,natural-craft",fashion_apparel,"No safety or certification claims (CPSIA, organic, BPA-free) unless the site states them"
+Beauty & Personal Care,beauty,beauty makeup cosmetics personal care,"Anatomy study: image 35%, offer 24%","soft-pop,quiet-luxury,editorial",beauty_skincare,"Cosmetic, not drug, claims: no treats, cures, heals or prevents"
+Skincare (Clinical),beauty,skincare serum retinol spf derm clinical actives,none (nearest: Beauty & Personal Care),"clean-tech,quiet-luxury,soft-pop",beauty_skincare,"No drug claims (acne, eczema, anti-aging as treatment); SPF numbers only as labeled"
+Clean & Natural Beauty,beauty,clean beauty natural organic vegan cruelty-free,none (nearest: Beauty & Personal Care),"natural-craft,soft-pop,editorial",beauty_skincare,"Clean, non-toxic, organic and cruelty-free claims need the site's own wording or certification"
+Fragrance,beauty,fragrance perfume cologne scent eau de parfum,none (nearest: Beauty & Personal Care),"dark-premium,quiet-luxury,editorial",beauty_skincare,
+Haircare & Grooming,beauty,haircare shampoo barber beard shaving grooming men,none (nearest: Beauty & Personal Care),"mono-brutal,dark-premium,clean-tech",beauty_skincare,
+Food & Beverage,food,food beverage snacks pantry drinks,"Anatomy study: image 40%, headline 16%","natural-craft,retro-warm,bold-retail",food_beverage,
+Coffee & Tea,food,coffee tea roaster beans espresso matcha,none (nearest: Food & Beverage),"natural-craft,retro-warm,editorial",food_beverage,
+Wine Beer & Spirits,food,wine beer spirits whiskey mezcal cocktails brewery winery,none (nearest: Food & Beverage),"dark-premium,retro-warm,editorial",food_beverage,"Audience of legal drinking age only; no appeal to minors; no health or performance claims; add the brand's responsible-drinking line if it has one"
+Snacks & Candy,food,snacks candy chips chocolate cereal sweets,none (nearest: Food & Beverage),"playful-color,bold-retail,retro-warm",food_beverage,
+Specialty Pantry,food,olive oil sauces spices honey condiments gourmet,none (nearest: Food & Beverage),"natural-craft,retro-warm,editorial",food_beverage,
+Meal Kits & Subscriptions,food,meal kit subscription box delivery prepared meals,none (nearest: Food & Beverage),"clean-tech,natural-craft,bold-retail",food_beverage,"Subscription terms (price, renewal, cancel) exactly as the site states them"
+Restaurants & Bakeries,food,restaurant bakery cafe pizzeria local eatery,none (nearest: Food & Beverage),"retro-warm,natural-craft,plain-note",food_beverage,"Hours, locations and menu prices as published"
+Supplements & Vitamins,wellness,supplements vitamins protein powder gummies nootropics,none (nearest: Health & Wellness),"clean-tech,natural-craft",health_wellness,"No disease claims; structure-function claims need the FDA disclaimer the site uses; no unsourced results or testimonials"
+CBD & Cannabis,wellness,cbd hemp cannabis thc delta gummies tinctures,none (nearest: Health & Wellness),"natural-craft,dark-premium,clean-tech",health_wellness,"Legal-age audience; no medical claims; check the sending platform's policy and the states it ships to"
+Health & Wellness,wellness,health wellness sleep recovery self-care,"Anatomy study: headline 24%, image 17%","clean-tech,natural-craft,soft-pop",health_wellness,No medical claims beyond the site's own wording
+Fitness & Activewear,wellness,fitness gym activewear yoga equipment training,none (nearest: Sports & Outdoor),"bold-retail,clean-tech,mono-brutal",sports_outdoor,
+Medical & Health Tech,wellness,medical device health tech wearable telehealth,none (nearest: Health & Wellness),"clean-tech,plain-note",health_wellness,"Regulated claims only as cleared or labeled; no personal health data in email"
+Sports & Outdoor,outdoor,sports outdoor running trail climbing,"Anatomy study: image 52%, headline 13%","bold-retail,mono-brutal,clean-tech",sports_outdoor,
+Camping & Outdoor Gear,outdoor,camping hiking backpacks tents gear,none (nearest: Sports & Outdoor),"natural-craft,bold-retail,retro-warm",sports_outdoor,
+Fishing & Coastal,outdoor,fishing tackle marine boating coastal sportfishing,none (nearest: Sports & Outdoor),"dark-premium,retro-warm,bold-retail",sports_outdoor,
+Cycling & Motorsport,outdoor,cycling bike motorcycle motorsport racing,none (nearest: Sports & Outdoor),"bold-retail,mono-brutal,dark-premium",sports_outdoor,
+Automotive Accessories,outdoor,car truck automotive accessories detailing,none (nearest: Tech & Gadgets),"mono-brutal,bold-retail,dark-premium",tech_gadgets,
+Home & Living,home,home living decor homeware,"Anatomy study: image 37%, offer 22%","editorial,natural-craft,quiet-luxury",home_living,
+Furniture,home,furniture sofa chairs tables lighting design,none (nearest: Home & Living),"editorial,quiet-luxury,mono-brutal",home_living,"Lead times and delivery fees as published"
+Bedding & Bath,home,bedding sheets towels linen bath textiles mattress,none (nearest: Home & Living),"editorial,natural-craft,soft-pop",home_living,
+Candles & Home Fragrance,home,candles soy wax home fragrance diffusers incense,none (nearest: Home & Living),"natural-craft,editorial,quiet-luxury",home_living,
+Kitchen & Cookware,home,kitchen cookware knives pans tableware ceramics,none (nearest: Home & Living),"editorial,natural-craft,clean-tech",home_living,
+Plants & Garden,home,plants garden seeds planters houseplants,none (nearest: Home & Living),"natural-craft,playful-color,editorial",home_living,
+Handmade & Crafts,home,handmade artisan craft pottery woodwork maker,none (nearest: Home & Living),"natural-craft,founder-letter,editorial",home_living,
+Sustainable & Eco Goods,home,sustainable eco zero waste recycled refill,none (nearest: Home & Living),"natural-craft,editorial,plain-note",home_living,"Eco claims (recyclable, carbon neutral, plastic-free) only as the site substantiates them"
+Art Prints & Photography,lifestyle,art prints posters photography gallery,none (nearest: Lifestyle & Retail),"editorial,mono-brutal,quiet-luxury",none,
+Books & Stationery,lifestyle,books stationery notebooks pens journals paper,none (nearest: Lifestyle & Retail),"editorial,retro-warm,founder-letter",none,
+Gifts & Seasonal,lifestyle,gifts gift box holiday seasonal personalized,"Anatomy study (Lifestyle & Retail): image 38%, offer 35%","retro-warm,playful-color,editorial",none,"Shipping cutoffs for holidays only as the site states them"
+Lifestyle & Retail,lifestyle,lifestyle retail general store,"Anatomy study: image 38%, offer 35%","retro-warm,playful-color,soft-pop",none,
+Faith & Religious Goods,lifestyle,judaica christian faith religious gifts bible prayer,none (nearest: Lifestyle & Retail),"founder-letter,editorial,quiet-luxury",none,"Respect observance dates and sacred names; avoid sale framing on holy days unless the brand does it"
+Toys & Games,lifestyle,toys games puzzles board games plush,none (nearest: Pet Supplies & Lifestyle),"playful-color,bold-retail,soft-pop",pet_supplies,"Age grades and safety claims as labeled; write to the parent, not the child"
+Gaming & Merch,lifestyle,gaming esports merch collectibles anime,none (nearest: Tech & Gadgets),"dark-premium,playful-color,mono-brutal",tech_gadgets,
+Pet Supplies & Lifestyle,pets,pet dog cat accessories toys,"Anatomy study: offer 28%, headline 20%","playful-color,soft-pop,natural-craft",pet_supplies,
+Pet Food & Health,pets,pet food treats supplements raw kibble,none (nearest: Pet Supplies & Lifestyle),"natural-craft,playful-color,clean-tech",pet_supplies,No veterinary or health claims beyond the label
+Tech & Gadgets,tech,tech gadgets electronics accessories,"Anatomy study: image 46%, offer 19%","clean-tech,dark-premium,mono-brutal",tech_gadgets,
+Audio & Smart Home,tech,audio headphones speakers smart home devices,none (nearest: Tech & Gadgets),"clean-tech,dark-premium,mono-brutal",tech_gadgets,
+Software & SaaS,services,software saas app platform b2b tool,none (taxonomy overlay only),"clean-tech,plain-note,mono-brutal",none,"B2B mail still needs the unsubscribe and postal address; no unsourced metrics or logos"
+Courses & Coaching,services,course coaching cohort masterclass creator education,none (no library data),"plain-note,founder-letter,clean-tech",none,"No income or results claims (FTC) unless documented and typical"
+Financial Services,services,fintech banking investing insurance credit,none (taxonomy overlay only),"clean-tech,plain-note",none,"Rates, fees and terms exactly as published, with the brand's required disclosures; no guaranteed returns"
+Local Services & Studios,services,salon spa studio clinic gym local booking,none (no library data),"plain-note,soft-pop,clean-tech",none,"Prices, hours and booking terms as published"
+Travel & Hospitality,services,travel hotel tours vacation rental airline,none (taxonomy overlay only),"editorial,natural-craft,quiet-luxury",none,"Prices with taxes and fees as the site shows them; dates and availability only as sourced"
+Events & Experiences,services,events tickets festival concert workshop experience,none (taxonomy overlay only),"bold-retail,dark-premium,retro-warm",none,"Real dates, venues and ticket terms only"
+Nonprofit & Causes,services,nonprofit charity foundation donation cause,none (taxonomy overlay only),"founder-letter,plain-note,natural-craft",none,"Impact numbers and tax-deductibility wording only as the organization states them"

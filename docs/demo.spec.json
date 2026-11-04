@@ -1,0 +1,106 @@
+{
+ "style": "editorial",
+ "utm_prefix": "demo",
+ "banned": [],
+ "allow": [],
+ "brand": {
+  "name": "Harbor & Kiln",
+  "home_url": "https://shop.margarita.test/",
+  "lang": "en",
+  "heading_stack": "'Fraunces', Georgia, serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;600&display=swap",
+  "palette": {
+   "canvas": "#F5F1EA",
+   "ink": "#1F1B16",
+   "accent": "#A34A28"
+  }
+ },
+ "emails": [
+  {
+   "slug": "01-welcome",
+   "theme": "welcome-offer",
+   "idea": "Demo: welcome with a code, text only",
+   "audience": "New subscribers",
+   "send": "Flow: Welcome, immediately",
+   "klaviyo_name": "Harbor & Kiln | Welcome | 01",
+   "subject": [
+    "Welcome to the studio",
+    "Your first mug, 10% off"
+   ],
+   "ab_variable": "Welcome versus offer",
+   "preheader": "Stoneware thrown by hand in small batches. Your code is inside.",
+   "blocks": [
+    {
+     "type": "header",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://shop.margarita.test/shop"
+      },
+      {
+       "label": "Journal",
+       "url": "https://shop.margarita.test/journal"
+      }
+     ]
+    },
+    {
+     "type": "hero_text",
+     "label": "Welcome",
+     "greeting_default": "friend",
+     "headline": "Made slowly, used every day.",
+     "subhead": "Stoneware thrown by hand in small batches, glazed in colors from the harbor outside our studio."
+    },
+    {
+     "type": "offer_code",
+     "label": "Your welcome code",
+     "code": "HELLO10",
+     "terms": "10% off your first order."
+    },
+    {
+     "type": "cta",
+     "label": "Shop the studio",
+     "url": "https://shop.margarita.test/shop"
+    },
+    {
+     "type": "steps",
+     "heading": "How a mug gets to you",
+     "items": [
+      {
+       "title": "Thrown",
+       "text": "Every piece starts on the wheel."
+      },
+      {
+       "title": "Fired twice",
+       "text": "Bisque, then glaze, at 1,240 degrees."
+      },
+      {
+       "title": "Packed by hand",
+       "text": "Wrapped in paper, never plastic."
+      }
+     ]
+    },
+    {
+     "type": "reviews",
+     "items": [
+      {
+       "quote": "The only mug I reach for in the morning.",
+       "author": "Demo review",
+       "stars": 5
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You're receiving this because you joined the Harbor & Kiln list."
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Fictional demo brand",
+     "source": "docs"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+id,severity,category,rule,checked_by
+legal-footer,critical,compliance,"Unsubscribe, manage preferences and view in browser as Klaviyo tags (URL-only *_link forms inside href); postal address via {{ organization.full_address }}","preflight A1, A2"
+no-placeholders,critical,integrity,"No lorem ipsum, TODO, example.com links, href=""#"", empty image src or leftover [[tokens]]","preflight A3, A4"
+real-facts-only,critical,integrity,"Offers, codes, prices, reviews, deadlines and stock claims come from the link, the assets or the brief only",manual (notes.md fact log)
+palette-lock,critical,brand,Every color in the HTML comes from the supplied palette (or an approved derived tint listed in notes.md),preflight A17
+klaviyo-syntax,critical,compliance,"Balanced {% if %}/{% for %}; no *|TAG|* or %%tag%%; first_name always has |default",preflight A13
+size-budget,high,rendering,HTML under 102 KB (warn) and never over 200 KB (Gmail clipping),preflight A9
+subject-length,high,copy,"Subject 30-45 characters target, warn over 50, fail over 60; preheader 100 max and never repeats the subject",preflight B
+one-primary-cta,high,structure,Exactly one primary button (the cta block); every other destination is a text link,"preflight C1, C3"
+images-off,high,accessibility,"Every content image has descriptive alt, styled alt text and a bgcolor cell; headlines are live text",preflight A14 + images-off render
+touch-targets,high,mobile,Buttons at least 48px tall and full width on phones,"preflight A6, render QA"
+no-orphans,high,typography,"No single word alone on the last line of a heading, button, label or short paragraph at 680 and 375px (render.py)","&nbsp; glue, render QA"
+breathing-room,high,layout,At least 24px between stacked blocks; 28-32px above a primary button,render.py + screenshot review
+house-style,medium,copy,No em or en dashes (raw or entity); straight quotes only,preflight A11
+no-stacked-punctuation,medium,copy,"No !! or ?! anywhere; at most 2 exclamation points per email",preflight B
+spam-triggers,medium,deliverability,"Spam-trigger words only when a real offer backs them",preflight S (warn)
+one-idea,medium,structure,One idea per email; 3 to 6 body blocks,skill
+proof-where-it-matters,medium,structure,"Use proof blocks where the email is about trust (welcome, objection, cart 2), not in every email",anatomy study
+first-recovery-no-discount,medium,strategy,First email of any recovery flow carries no discount,flow study
+contrast,high,accessibility,Body and small text at least 4.5:1; button text on accent at least 4.5:1,preflight contrast
+email-safe,high,rendering,"No SVG, absolute positioning, script, form, iframe or video tags",preflight A16

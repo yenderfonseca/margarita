@@ -1,0 +1,515 @@
+{
+ "_doc": "Fixture for build.py --self-test: a fictional brand (Harbor & Kiln). Email 01 is a typical product drop; email 02 uses every other block so the test covers the whole library in all 13 styles. Not a real product.",
+ "style": "editorial",
+ "utm_prefix": "harbor",
+ "brand": {
+  "name": "Harbor & Kiln",
+  "home_url": "https://shop.margarita.test/",
+  "heading_stack": "Georgia, 'Times New Roman', serif",
+  "body_stack": "Helvetica, Arial, sans-serif",
+  "palette": {
+   "page": "#F4EFE6",
+   "canvas": "#FFFFFF",
+   "band": "#F4EFE6",
+   "border": "#E4DCCD",
+   "ink": "#1F2A24",
+   "ink2": "#5C635E",
+   "accent": "#B5542E",
+   "on_accent": "#FFFFFF",
+   "dark_bg": "#1F2A24",
+   "dark_text": "#F4EFE6",
+   "dark_text2": "#E4DCCD"
+  }
+ },
+ "emails": [
+  {
+   "slug": "01-product-drop",
+   "theme": "product-drop",
+   "idea": "The Harbor Mug is out",
+   "audience": "Engaged 90 days",
+   "send": "Campaign",
+   "subject": [
+    "Meet the Harbor Mug, thrown by hand",
+    "Forty test firings. One mug."
+   ],
+   "ab_variable": "product-led vs process-led",
+   "preheader": "Glazed in batches of forty, in Maine.",
+   "blocks": [
+    {
+     "type": "header"
+    },
+    {
+     "type": "hero_image",
+     "src": "https://shop.margarita.test/img/harbor-mug-hero.jpg",
+     "alt": "The Harbor Mug in sea-glass glaze on a linen cloth",
+     "url": "https://shop.margarita.test/products/harbor-mug"
+    },
+    {
+     "type": "hero_text",
+     "label": "New in the studio",
+     "headline": "Meet the Harbor Mug",
+     "subhead": "A 12 oz stoneware mug with a thumb rest, thrown on the wheel and glazed in batches of forty."
+    },
+    {
+     "type": "story",
+     "heading": "Why it took us a year",
+     "body": [
+      "We wanted a mug that holds heat without getting heavy. Forty test firings later, the walls are thin at the rim and thick at the base."
+     ],
+     "signature": "Mara, at the wheel"
+    },
+    {
+     "type": "cta",
+     "label": "Shop the Harbor Mug",
+     "url": "https://shop.margarita.test/products/harbor-mug"
+    },
+    {
+     "type": "products",
+     "heading": "Made to pair with it",
+     "items": [
+      {
+       "title": "Harbor Saucer",
+       "price": "$24",
+       "url": "https://shop.margarita.test/products/saucer",
+       "src": "https://shop.margarita.test/img/saucer.jpg",
+       "link_label": "Shop the saucer"
+      },
+      {
+       "title": "Kiln Tumbler",
+       "price": "$32",
+       "url": "https://shop.margarita.test/products/tumbler",
+       "src": "https://shop.margarita.test/img/tumbler.jpg"
+      },
+      {
+       "title": "Tide Bowl",
+       "price": "$38",
+       "url": "https://shop.margarita.test/products/bowl",
+       "src": "https://shop.margarita.test/img/bowl.jpg",
+       "was_price": "$44"
+      }
+     ]
+    },
+    {
+     "type": "trust_row",
+     "items": [
+      {
+       "text": "Dishwasher safe"
+      },
+      {
+       "text": "Made in Maine"
+      },
+      {
+       "text": "Ships in 2 days"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Harbor & Kiln list."
+    }
+   ],
+   "sources": [
+    {
+     "claim": "12 oz, thumb rest, batches of forty",
+     "source": "fixture"
+    }
+   ]
+  },
+  {
+   "slug": "02-kitchen-sink",
+   "theme": "education",
+   "idea": "Every block in one email (fixture only)",
+   "subject": [
+    "How to season a stoneware bowl",
+    "Your bowl, three ways"
+   ],
+   "preheader": "Three steps, ten minutes, and a better glaze for years.",
+   "blocks": [
+    {
+     "type": "announcement",
+     "text": "Studio sale ends Sunday",
+     "url": "https://shop.margarita.test/sale"
+    },
+    {
+     "type": "header",
+     "tagline": "Stoneware from Maine",
+     "links": [
+      {
+       "label": "Mugs",
+       "url": "https://shop.margarita.test/mugs"
+      },
+      {
+       "label": "Bowls",
+       "url": "https://shop.margarita.test/bowls"
+      },
+      {
+       "label": "Studio",
+       "url": "https://shop.margarita.test/studio"
+      }
+     ]
+    },
+    {
+     "type": "overlay_hero",
+     "src": "https://shop.margarita.test/img/kiln-dark.jpg",
+     "url": "https://shop.margarita.test/sale",
+     "label": "Studio sale",
+     "headline": "Seconds, priced to go",
+     "subhead": "Small glaze marks, same stoneware.",
+     "height": 420
+    },
+    {
+     "type": "split_hero",
+     "src": "https://shop.margarita.test/img/bowl-split.jpg",
+     "alt": "A Tide Bowl filled with lemons",
+     "url": "https://shop.margarita.test/products/bowl",
+     "label": "Care guide",
+     "headline": "Season your bowl",
+     "subhead": "Ten minutes now keeps the glaze bright for years."
+    },
+    {
+     "type": "hero_text",
+     "greeting_default": "friend",
+     "headline": "Three steps to a better glaze"
+    },
+    {
+     "type": "steps",
+     "heading": "The routine",
+     "items": [
+      {
+       "title": "Warm water rinse",
+       "text": "No soap the first time."
+      },
+      {
+       "title": "Dry it upside down",
+       "text": "Air dry for an hour."
+      },
+      {
+       "title": "Oil the foot ring",
+       "text": "One drop of food-safe oil."
+      }
+     ]
+    },
+    {
+     "type": "stats_row",
+     "heading": "By the numbers",
+     "items": [
+      {
+       "value": "40",
+       "label": "Test firings"
+      },
+      {
+       "value": "12 oz",
+       "label": "Capacity"
+      },
+      {
+       "value": "2,232",
+       "label": "Degrees"
+      }
+     ]
+    },
+    {
+     "type": "feature_grid",
+     "heading": "Why stoneware",
+     "items": [
+      {
+       "title": "Holds heat",
+       "text": "Thick base, thin rim."
+      },
+      {
+       "title": "Oven safe",
+       "text": "Up to 400 degrees."
+      },
+      {
+       "title": "Made in Maine",
+       "text": "Fired every Thursday."
+      }
+     ]
+    },
+    {
+     "type": "ingredients",
+     "heading": "What goes in",
+     "items": [
+      {
+       "title": "Maine clay",
+       "text": "Dug 40 miles from the studio.",
+       "src": "https://shop.margarita.test/img/clay.jpg"
+      },
+      {
+       "title": "Ash glaze",
+       "text": "From the kiln's own wood."
+      }
+     ]
+    },
+    {
+     "type": "media_rows",
+     "heading": "Two ways to use it",
+     "items": [
+      {
+       "src": "https://shop.margarita.test/img/row1.jpg",
+       "alt": "Bowl with ramen",
+       "title": "For noodles",
+       "text": "Deep enough for broth.",
+       "url": "https://shop.margarita.test/products/bowl",
+       "link_label": "See the bowl"
+      },
+      {
+       "src": "https://shop.margarita.test/img/row2.jpg",
+       "alt": "Bowl with fruit",
+       "title": "For the table",
+       "text": "Wide enough for lemons.",
+       "url": "https://shop.margarita.test/products/bowl",
+       "label": "Most gifted"
+      }
+     ]
+    },
+    {
+     "type": "mosaic",
+     "items": [
+      {
+       "src": "https://shop.margarita.test/img/m1.jpg",
+       "alt": "The studio shelf",
+       "url": "https://shop.margarita.test/"
+      },
+      {
+       "src": "https://shop.margarita.test/img/m2.jpg",
+       "alt": "Glaze detail",
+       "url": "https://shop.margarita.test/"
+      },
+      {
+       "src": "https://shop.margarita.test/img/m3.jpg",
+       "alt": "Kiln door",
+       "url": "https://shop.margarita.test/"
+      }
+     ]
+    },
+    {
+     "type": "image_band",
+     "src": "https://shop.margarita.test/img/kiln.jpg",
+     "alt": "The studio kiln at dawn",
+     "caption": "Fired at 2,232 degrees."
+    },
+    {
+     "type": "comparison",
+     "heading": "Stoneware vs porcelain",
+     "left_label": "Stoneware",
+     "right_label": "Porcelain",
+     "rows": [
+      {
+       "label": "Feel",
+       "left": "Warm, matte",
+       "right": "Cool, glassy"
+      },
+      {
+       "label": "Weight",
+       "left": "Heavier",
+       "right": "Lighter"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "heading": "Questions",
+     "items": [
+      {
+       "q": "Is it oven safe?",
+       "a": "Up to 400 degrees."
+      },
+      {
+       "q": "Does it chip?",
+       "a": "The rim is thick, so rarely."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "quote": "Clay remembers how you treated it",
+     "author": "Mara",
+     "author_title": "founder",
+     "photo": "https://shop.margarita.test/img/mara.jpg"
+    },
+    {
+     "type": "reviews",
+     "heading": "From the list",
+     "items": [
+      {
+       "quote": "My coffee stays hot.",
+       "author": "J. R.",
+       "stars": 5
+      },
+      {
+       "quote": "Heavy in the best way.",
+       "author": "S. K."
+      }
+     ]
+    },
+    {
+     "type": "offer_code",
+     "label": "Studio sale code",
+     "code": "KILN15",
+     "terms": "15% off bowls until Sunday, 11:59 pm ET."
+    },
+    {
+     "type": "cta",
+     "label": "Shop the bowls",
+     "url": "https://shop.margarita.test/collections/bowls",
+     "note": "Code applies at checkout."
+    },
+    {
+     "type": "spotlight",
+     "src": "https://shop.margarita.test/img/bowl.jpg",
+     "alt": "Tide Bowl",
+     "url": "https://shop.margarita.test/products/bowl",
+     "label": "Most gifted",
+     "title": "Tide Bowl",
+     "text": "Wide enough for ramen.",
+     "price": "$38",
+     "link_label": "See the bowl"
+    },
+    {
+     "type": "category_tiles",
+     "heading": "Shop by room",
+     "items": [
+      {
+       "title": "Kitchen",
+       "url": "https://shop.margarita.test/collections/kitchen",
+       "src": "https://shop.margarita.test/img/kitchen.jpg"
+      },
+      {
+       "title": "Table",
+       "url": "https://shop.margarita.test/collections/table",
+       "src": "https://shop.margarita.test/img/table.jpg"
+      }
+     ]
+    },
+    {
+     "type": "letter",
+     "body": [
+      "Thank you for reading this far.",
+      "We fire the kiln every Thursday."
+     ],
+     "signoff": "Warmly,",
+     "signature": "Mara"
+    },
+    {
+     "type": "cart_items",
+     "heading": "Still in your cart"
+    },
+    {
+     "type": "press_strip",
+     "heading": "As seen in",
+     "items": [
+      {
+       "name": "Coastal Living"
+      },
+      {
+       "name": "Maine Home"
+      }
+     ]
+    },
+    {
+     "type": "link_list",
+     "heading": "Shop the studio",
+     "items": [
+      {
+       "label": "Mugs",
+       "url": "https://shop.margarita.test/collections/mugs"
+      },
+      {
+       "label": "Bowls",
+       "url": "https://shop.margarita.test/collections/bowls"
+      }
+     ]
+    },
+    {
+     "type": "disclaimer",
+     "text": "Fixture disclaimer: oven safe to 400 degrees; hand-wash the gold rim."
+    },
+    {
+     "type": "social",
+     "items": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/harborandkiln"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Harbor & Kiln list.",
+     "layout": "inverse",
+     "note": "Fired every Thursday in Portland, Maine.",
+     "links": [
+      {
+       "label": "Mugs",
+       "url": "https://shop.margarita.test/mugs"
+      },
+      {
+       "label": "Bowls",
+       "url": "https://shop.margarita.test/bowls"
+      },
+      {
+       "label": "Studio",
+       "url": "https://shop.margarita.test/studio"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/harborandkiln"
+      }
+     ],
+     "contact": "Studio hours: Thu to Sun, 10 to 4"
+    }
+   ]
+  },
+  {
+   "slug": "03-chrome",
+   "theme": "announcement",
+   "idea": "Split header and rich footer (fixture only)",
+   "subject": [
+    "The studio is open on Sundays now",
+    "New hours at the Harbor studio"
+   ],
+   "preheader": "Thursday to Sunday, 10 to 4. Come see the kiln.",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://shop.margarita.test/shop"
+      },
+      {
+       "label": "Visit",
+       "url": "https://shop.margarita.test/visit"
+      }
+     ]
+    },
+    {
+     "type": "hero_text",
+     "label": "Studio news",
+     "headline": "We are open on Sundays now",
+     "subhead": "Thursday to Sunday, 10 to 4, starting this week."
+    },
+    {
+     "type": "cta",
+     "label": "Plan a visit",
+     "url": "https://shop.margarita.test/visit"
+    },
+    {
+     "type": "footer",
+     "layout": "rich",
+     "note": "Stoneware from Maine.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://shop.margarita.test/shop"
+      }
+     ],
+     "signup_reason": "You are getting this because you joined the Harbor & Kiln list."
+    }
+   ]
+  }
+ ]
+}

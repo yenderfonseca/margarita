@@ -1,0 +1,306 @@
+<!--
+MARGARITA BLOCK LIBRARY (rendered by scripts/build.py; do not paste by hand)
+
+Each block starts with  <!-- BLOCK: name | bg=canvas|band|accent | pad=section|thin|bleed|none|cta|header|footer | req=a,b -->
+  bg   which palette background it sits on (flat styles turn band into canvas)
+  pad  how the engine sets [[pad_t]]/[[pad_b]]: section = style section_y, thin = 24px, bleed/none = 0,
+       cta = 32px top. Same-background neighbours collapse to one gap automatically.
+  req  spec fields that must exist; the build stops instead of shipping an empty block.
+Syntax: [[name]] strict value, [[if x]]..[[else]]..[[/if]], [[if not x]], [[each items]]..[[/each]] (n, index, first, last).
+Always available: palette roles (page canvas band border ink ink2 accent on_accent dark_bg dark_text), label_color,
+star_color, style tokens (radius img_radius heading_weight heading_case heading_tracking btn_case btn_tracking
+label_case label_tracking fs_display lh_display fs_h2 lh_h2 lh_body gutter align align_margin btn_pad),
+heading_stack body_stack body_fallback brand_name home_url logo_src logo_width, bg bg_class pad_t pad_b.
+-->
+
+<!-- BLOCK: announcement | bg=accent | pad=thin | req=text -->
+<tr><td align="center" class="m-pad" bgcolor="[[accent]]" style="background-color:[[accent]];padding:12px [[gutter]] 12px [[gutter]];font-family:[[body_stack]];font-size:12px;line-height:18px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[on_accent]];">[[if url]]<a href="[[url]]" target="_blank" style="color:[[on_accent]];text-decoration:none;">[[text]]</a>[[else]][[text]][[/if]]</td></tr>
+
+<!-- BLOCK: header | bg=canvas | pad=header -->
+[[if is_inverse]]<tr><td align="[[align]]" class="m-pad" bgcolor="[[inv_bg]]" style="background-color:[[inv_bg]];text-align:[[align]];padding:22px [[gutter]] 22px [[gutter]];">
+<a href="[[home_url]]" target="_blank" style="text-decoration:none;">[[logo_html]]</a>
+[[if links]]<p class="m-nav" style="margin:14px 0 0;white-space:nowrap;">[[each links]]<a href="[[url]]" target="_blank" style="display:inline-block;padding:6px 10px;font-family:[[body_stack]];font-size:11px;line-height:16px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:uppercase;color:[[inv_fg]];text-decoration:none;">[[label]]</a>[[/each]]</p>[[/if]]
+</td></tr>[[else]][[if is_split]]<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+<td class="m-stack m-center" valign="middle" align="left" style="text-align:left;"><a href="[[home_url]]" target="_blank" style="text-decoration:none;">[[logo_html]]</a></td>
+<td class="m-stack m-center" valign="middle" align="right" style="text-align:right;padding-top:4px;">[[each links]]<a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:8px 0 8px 18px;font-family:[[body_stack]];font-size:12px;line-height:16px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink]];text-decoration:none;">[[label]]</a>[[/each]]</td>
+</tr></table></td></tr>[[else]]<tr><td align="[[align]]" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="text-align:[[align]];padding:[[pad_t]] [[gutter]] [[if links]]0[[else]][[pad_b]][[/if]] [[gutter]];">
+<a href="[[home_url]]" target="_blank" style="text-decoration:none;">[[logo_html]]</a>
+[[if tagline]]<p class="t-ink2" style="margin:8px 0 0;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:600;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[tagline]]</p>[[/if]]
+</td></tr>[[if links]]<tr><td align="center" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:18px [[gutter]] [[pad_b]] [[gutter]];"><table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td align="center" class="m-nav" style="border-top:1px solid [[border]];border-bottom:1px solid [[border]];padding:4px 0;white-space:nowrap;">[[each links]]<a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:10px 12px;font-family:[[body_stack]];font-size:11px;line-height:16px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:uppercase;color:[[ink]];text-decoration:none;">[[label]]</a>[[/each]]</td></tr></table></td></tr>[[/if]][[/if]][[/if]]
+<!-- BLOCK: hero_image | bg=band | pad=bleed | req=src,alt,url -->
+<tr><td class="[[if image_inset]]bg-canvas m-pad[[else]]bg-band[[/if]]" bgcolor="[[hero_bg]]" style="padding:[[hero_pad]];font-size:0;line-height:0;">
+<a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[alt]]" width="600" class="m-img" style="display:block;width:100%;max-width:600px;height:auto;border:0;border-radius:[[hero_radius]];text-align:center;font-family:[[body_stack]];font-size:18px;line-height:26px;color:[[ink]];"></a>
+</td></tr>
+
+<!-- BLOCK: split_hero | bg=band | pad=none | req=src,alt,url,headline -->
+<tr><td class="bg-band" bgcolor="[[band]]" style="padding:0;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" dir="[[if image_right]]rtl[[else]]ltr[[/if]]"><tr>
+<td class="m-stack" dir="ltr" width="300" valign="middle" style="width:300px;padding:0;font-size:0;line-height:0;"><a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[alt]]" width="300" class="m-img" style="display:block;width:100%;max-width:300px;height:auto;border:0;font-family:[[body_stack]];font-size:16px;line-height:24px;color:[[ink]];"></a></td>
+<td class="m-stack m-pad" dir="ltr" width="300" valign="middle" style="width:300px;padding:40px 36px 40px 36px;text-align:left;">
+[[if label]]<p style="margin:0 0 12px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+<h1 class="m-h1 t-ink" style="margin:0;font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[headline]]</h1>
+[[if subhead]]<p class="t-ink2" style="margin:12px 0 0;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];">[[subhead]]</p>[[/if]]
+</td></tr></table>
+</td></tr>
+
+<!-- BLOCK: hero_text | bg=canvas | pad=section | req=headline -->
+<tr><td align="[[align]]" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="text-align:[[align]];padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if label]]<p style="margin:0 0 14px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+<h1 class="m-h1 t-ink" style="margin:0;font-family:[[heading_stack]];font-size:[[fs_display]];line-height:[[lh_display]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[headline]]</h1>
+[[if greeting_default]]<p class="t-ink" style="margin:18px 0 0;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink]];">[[w_hi]] {{ first_name|default:'[[greeting_default]]' }},</p>[[/if]]
+[[if subhead]]<p class="t-ink2" style="margin:16px [[align_margin]] 0;max-width:460px;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];text-wrap:pretty;">[[subhead]]</p>[[/if]]
+</td></tr>
+
+<!-- BLOCK: image_band | bg=band | pad=bleed | req=src,alt -->
+<tr><td class="bg-band" bgcolor="[[band]]" style="padding:0;font-size:0;line-height:0;">
+[[if url]]<a href="[[url]]" target="_blank">[[/if]]<img src="[[src]]" alt="[[alt]]" width="600" class="m-img" style="display:block;width:100%;max-width:600px;height:auto;border:0;text-align:center;font-family:[[body_stack]];font-size:16px;line-height:24px;color:[[ink]];">[[if url]]</a>[[/if]]
+</td></tr>
+[[if caption]]<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:14px [[gutter]] 18px [[gutter]];"><p class="t-ink2" style="margin:0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[ink2]];">[[caption]]</p></td></tr>[[/if]]
+
+<!-- BLOCK: story | bg=canvas | pad=section | req=body -->
+<tr><td align="[[align]]" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="text-align:[[align]];padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if label]]<p style="margin:0 0 14px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 16px;font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+[[each paragraphs]]<p class="t-ink2" style="margin:[[if first]]0[[else]]14px[[/if]] [[align_margin]] 0;max-width:460px;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];text-wrap:pretty;">[[p]]</p>[[/each]]
+[[if signature]]<p class="t-ink" style="margin:24px 0 0;font-family:[[heading_stack]];font-size:18px;line-height:24px;font-style:italic;color:[[ink]];">[[signature]]</p>[[/if]]
+[[if signature_title]]<p class="t-ink2" style="margin:4px 0 0;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[signature_title]]</p>[[/if]]
+</td></tr>
+
+<!-- BLOCK: letter | bg=canvas | pad=section | req=body,signature -->
+<tr><td align="left" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="text-align:left;padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if greeting_default]]<p class="t-ink" style="margin:0 0 18px;font-family:[[body_stack]];font-size:17px;line-height:[[lh_body]];color:[[ink]];">[[w_hi]] {{ first_name|default:'[[greeting_default]]' }},</p>[[/if]]
+[[each paragraphs]]<p class="t-ink" style="margin:0 0 16px;font-family:[[body_stack]];font-size:17px;line-height:[[lh_body]];color:[[ink]];">[[p]]</p>[[/each]]
+[[if signoff]]<p class="t-ink" style="margin:8px 0 0;font-family:[[body_stack]];font-size:17px;line-height:[[lh_body]];color:[[ink]];">[[signoff]]</p>[[/if]]
+<p class="t-ink" style="margin:4px 0 0;font-family:[[heading_stack]];font-size:19px;line-height:26px;font-style:italic;color:[[ink]];">[[signature]]</p>
+[[if signature_title]]<p class="t-ink2" style="margin:2px 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[ink2]];">[[signature_title]]</p>[[/if]]
+</td></tr>
+
+<!-- BLOCK: quote | bg=band | pad=section | req=quote,author -->
+<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if photo]]<img src="[[photo]]" alt="[[author]]" width="72" height="72" style="display:block;width:72px;height:72px;margin:0 auto 18px;border:0;border-radius:36px;font-family:[[body_stack]];font-size:10px;color:[[ink]];">[[/if]]
+<p class="t-ink" style="margin:0 auto;max-width:460px;font-family:[[heading_stack]];font-size:24px;line-height:32px;font-weight:[[heading_weight]];color:[[ink]];text-wrap:balance;">"[[quote]]"</p>
+<p class="t-ink2" style="margin:16px 0 0;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[byline]]</p>
+</td></tr>
+
+<!-- BLOCK: cta | bg=canvas | pad=cta | req=label,url -->
+<tr><td align="[[align]]" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="text-align:[[align]];padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" class="m-btn" style="margin:0 [[align_margin]];"><tr><td align="center" bgcolor="[[btn_bg]]" style="background-color:[[btn_bg]];border-radius:[[radius]];">
+<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="[[url]]" style="height:52px;v-text-anchor:middle;width:[[vml_width]]px;" arcsize="[[arcsize]]" strokecolor="[[if btn_border]][[ink]][[else]][[btn_bg]][[/if]]" fillcolor="[[btn_bg]]"><w:anchorlock/><center style="color:[[on_btn]];font-family:[[body_fallback]];font-size:[[btn_size]];font-weight:bold;">[[vml_label]]</center></v:roundrect><![endif]-->
+<!--[if !mso]><!--><a href="[[url]]" target="_blank" style="display:inline-block;min-height:48px;box-sizing:border-box;padding:[[btn_pad]];[[if btn_border]]border:1px solid [[ink]];[[/if]]font-family:[[body_stack]];font-size:[[btn_size]];line-height:20px;font-weight:700;letter-spacing:[[btn_tracking]];text-transform:[[btn_case]];color:[[on_btn]];text-decoration:none;border-radius:[[radius]];">[[label]]</a><!--<![endif]-->
+</td></tr></table>
+[[if note]]<p class="t-ink2" style="margin:14px 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[ink2]];">[[note]]</p>[[/if]]
+</td></tr>
+
+<!-- BLOCK: offer_code | bg=band | pad=section | req=code -->
+<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if label]]<p class="t-ink2" style="margin:0 0 16px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[label]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;"><tr><td align="center" class="m-code t-ink" style="border:1px solid [[ink]];border-radius:[[radius]];padding:14px 32px;font-family:[[heading_stack]];font-size:28px;line-height:34px;letter-spacing:5px;color:[[ink]];">[[code]]</td></tr></table>
+[[if terms]]<p class="t-ink2" style="margin:16px 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[ink2]];">[[terms]]</p>[[/if]]
+</td></tr>
+
+<!-- BLOCK: products | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 28px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;">
+[[each rows]]<tr>[[each cells]]<td class="[[cell_class]]" width="[[cell_w]]" valign="top" style="width:[[cell_w]]px;padding:0 [[pad_r]] 24px [[pad_l]];text-align:[[align]];">
+[[if src]]<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="[[tile_class]]"><tr><td class="dk-keep" bgcolor="[[tile_bg]]" style="background-color:[[tile_bg]];padding:[[tile_pad]];border-radius:[[img_radius]];"><a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[if alt]][[alt]][[else]][[title]][[/if]]" width="[[img_w]]" class="[[img_class]]" style="display:block;width:100%;max-width:[[img_w]]px;height:auto;margin:0 [[align_margin]];border:0;border-radius:[[img_radius]];font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink]];"></a></td></tr></table>[[/if]]
+[[if label]]<p style="margin:14px 0 0;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+<p class="t-ink" style="margin:12px 0 0;font-family:[[heading_stack]];font-size:17px;line-height:23px;font-weight:[[heading_weight]];color:[[ink]];"><a href="[[url]]" target="_blank" class="t-ink" style="color:[[ink]];text-decoration:none;">[[title]]</a></p>
+[[if price]]<p class="t-ink2" style="margin:4px 0 0;font-family:[[body_stack]];font-size:[[price_size]];line-height:22px;font-weight:[[price_weight]];color:[[ink2]];">[[if was_price]]<span class="t-ink" style="color:[[ink]];font-weight:700;">[[price]]</span> <s style="color:[[ink2]];">[[was_price]]</s><span style="display:none;"> was [[was_price]]</span>[[else]][[price]][[/if]]</p>[[/if]]
+[[if link_label]]<p style="margin:10px 0 0;"><a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:6px 0;font-family:[[body_stack]];font-size:12px;line-height:18px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink]];text-decoration:underline;text-underline-offset:4px;">[[link_label]]</a></p>[[/if]]
+</td>[[/each]]</tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: spotlight | bg=band | pad=none | req=src,alt,url,title -->
+<tr><td class="bg-band" bgcolor="[[band]]" style="padding:0;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" dir="[[if image_right]]rtl[[else]]ltr[[/if]]"><tr>
+<td class="m-stack dk-keep" dir="ltr" width="300" valign="middle" bgcolor="[[band]]" style="width:300px;padding:0;font-size:0;line-height:0;background-color:[[band]];"><a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[alt]]" width="300" class="m-img" style="display:block;width:100%;max-width:300px;height:auto;border:0;font-family:[[body_stack]];font-size:15px;line-height:22px;color:[[ink]];"></a></td>
+<td class="m-stack m-pad m-pt" dir="ltr" width="300" valign="middle" style="width:300px;padding:40px 36px 40px 36px;text-align:left;">
+[[if label]]<p style="margin:0 0 12px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+<h2 class="m-h2 t-ink" style="margin:0;font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[title]]</h2>
+[[if text]]<p class="t-ink2" style="margin:12px 0 0;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];">[[text]]</p>[[/if]]
+[[if price]]<p class="t-ink" style="margin:12px 0 0;font-family:[[body_stack]];font-size:16px;line-height:24px;font-weight:600;color:[[ink]];">[[price]]</p>[[/if]]
+[[if link_label]]<p style="margin:16px 0 0;"><a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:12px 0;font-family:[[body_stack]];font-size:14px;line-height:20px;font-weight:700;color:[[ink]];text-decoration:underline;text-underline-offset:4px;">[[link_label]]</a></p>[[/if]]
+</td></tr></table>
+</td></tr>
+
+<!-- BLOCK: category_tiles | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 24px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;">
+[[each rows]]<tr>[[each cells]]<td class="[[cell_class]]" width="[[cell_w]]" valign="top" style="width:[[cell_w]]px;padding:0 [[pad_r]] 16px [[pad_l]];">
+<a href="[[url]]" target="_blank" style="text-decoration:none;">[[if src]]<img src="[[src]]" alt="[[if alt]][[alt]][[else]][[title]][[/if]]" width="[[img_w]]" class="[[img_class]]" style="display:block;width:100%;max-width:[[img_w]]px;height:auto;border:0;border-radius:[[img_radius]];font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink]];">[[/if]]
+<span class="t-ink" style="display:block;padding:12px 0 4px;font-family:[[body_stack]];font-size:13px;line-height:20px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink]];text-align:[[align]];">[[title]]</span></a>
+</td>[[/each]]</tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: steps | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 12px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+[[if intro]]<p class="t-ink2" style="margin:0 0 12px;text-align:[[align]];font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];">[[intro]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:12px;">
+[[each items]]<tr><td style="padding:20px 0;border-top:1px solid [[border]];"><table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+<td width="56" valign="top" style="width:56px;font-family:[[heading_stack]];font-size:24px;line-height:30px;font-weight:[[heading_weight]];color:[[label_color]];">[[n]]</td>
+<td valign="top" style="text-align:left;"><p class="t-ink" style="margin:2px 0 0;font-family:[[body_stack]];font-size:16px;line-height:24px;font-weight:700;color:[[ink]];">[[title]]</p>[[if text]]<p class="t-ink2" style="margin:6px 0 0;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];">[[text]]</p>[[/if]]</td>
+</tr></table></td></tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: comparison | bg=canvas | pad=section | req=left_label,right_label,rows -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 24px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr><td width="34%" style="width:34%;padding:0 8px 12px 0;"></td>
+<td width="33%" style="width:33%;padding:0 8px 12px;font-family:[[body_stack]];font-size:12px;line-height:18px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[left_label]]</td>
+<td width="33%" style="width:33%;padding:0 0 12px 8px;font-family:[[body_stack]];font-size:12px;line-height:18px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[right_label]]</td></tr>
+[[each rows]]<tr><td class="t-ink" valign="top" style="padding:14px 8px 14px 0;border-top:1px solid [[border]];font-family:[[body_stack]];font-size:14px;line-height:20px;font-weight:700;color:[[ink]];">[[label]]</td>
+<td class="t-ink" valign="top" style="padding:14px 8px;border-top:1px solid [[border]];font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink]];">[[left]]</td>
+<td class="t-ink2" valign="top" style="padding:14px 0 14px 8px;border-top:1px solid [[border]];font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink2]];">[[right]]</td></tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: faq | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];text-align:left;">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 8px;font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+[[each items]]<p class="t-ink" style="margin:20px 0 0;padding-top:20px;border-top:1px solid [[border]];font-family:[[body_stack]];font-size:16px;line-height:24px;font-weight:700;color:[[ink]];">[[q]]</p>
+<p class="t-ink2" style="margin:6px 0 0;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[ink2]];">[[a]]</p>[[/each]]
+</td></tr>
+
+<!-- BLOCK: reviews | bg=band | pad=section | req=items -->
+<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<p class="t-ink2" style="margin:0 0 24px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[heading]]</p>[[/if]]
+[[each items]]<div style="[[if not first]]margin-top:28px;padding-top:28px;border-top:1px solid [[border]];[[/if]]">
+[[if photo]]<img src="[[photo]]" alt="[[author]]" width="56" height="56" style="display:block;width:56px;height:56px;margin:0 auto 12px;border:0;border-radius:28px;font-family:[[body_stack]];font-size:10px;color:[[ink]];">[[/if]]
+[[if stars_html]]<p style="margin:0 0 12px;font-family:Arial, sans-serif;font-size:14px;line-height:20px;letter-spacing:3px;color:[[star_color]];">[[stars_html]]</p>[[/if]]
+<p class="t-ink" style="margin:0 auto;max-width:440px;font-family:[[heading_stack]];font-size:21px;line-height:29px;color:[[ink]];text-wrap:balance;">"[[quote]]"</p>
+<p class="t-ink2" style="margin:12px 0 0;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[author]]</p>
+</div>[[/each]]
+</td></tr>
+
+<!-- BLOCK: trust_row | bg=band | pad=thin | req=items -->
+<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;"><tr>
+[[each items]]<td class="m-chip t-ink" align="center" valign="top" style="padding:0 12px;font-family:[[body_stack]];font-size:12px;line-height:18px;font-weight:600;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink]];">[[text]]</td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: overlay_hero | bg=band | pad=bleed | req=src,headline,url -->
+<tr><td class="bg-band" background="[[src]]" bgcolor="[[dark_bg]]" valign="bottom" style="background-color:[[dark_bg]];background-image:url('[[src]]');background-position:center;background-size:cover;background-repeat:no-repeat;padding:0;">
+<!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:[[hero_h]]px;"><v:fill type="frame" src="[[src]]" color="[[dark_bg]]"/><v:textbox inset="0,0,0,0"><![endif]-->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td class="m-pad" height="[[hero_h]]" valign="bottom" style="height:[[hero_h]]px;padding:48px [[gutter]] 44px [[gutter]];text-align:[[align]];">
+<a href="[[url]]" target="_blank" style="text-decoration:none;">
+[[if label]]<p style="margin:0 0 12px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[dark_text]];">[[label]]</p>[[/if]]
+<h1 class="m-h1" style="margin:0;font-family:[[heading_stack]];font-size:[[fs_display]];line-height:[[lh_display]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[dark_text]];text-wrap:balance;">[[headline]]</h1>
+[[if subhead]]<p style="margin:12px [[align_margin]] 0;max-width:440px;font-family:[[body_stack]];font-size:[[body_size]];line-height:[[lh_body]];color:[[dark_text]];">[[subhead]]</p>[[/if]]
+</a></td></tr></table>
+<!--[if gte mso 9]></v:textbox></v:rect><![endif]-->
+</td></tr>
+
+<!-- BLOCK: stats_row | bg=band | pad=section | req=items -->
+<tr><td align="center" class="m-pad bg-band" bgcolor="[[band]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<p class="t-ink2" style="margin:0 0 20px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[heading]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"><tr>
+[[each items]]<td width="[[col_pct]]" valign="top" align="center" style="width:[[col_pct]];padding:0 6px;">
+<p style="margin:0;font-family:[[heading_stack]];font-size:34px;line-height:38px;font-weight:[[heading_weight]];color:[[label_color]];">[[value]]</p>
+<p class="t-ink2" style="margin:8px 0 0;font-family:[[body_stack]];font-size:10px;line-height:14px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[label]]</p>
+</td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: feature_grid | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 28px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"><tr>
+[[each items]]<td class="m-stack m-gap" width="[[col_pct]]" valign="top" align="center" style="width:[[col_pct]];padding:0 10px;text-align:center;">
+[[if icon_src]]<img src="[[icon_src]]" alt="" width="40" height="40" style="display:block;width:40px;height:40px;margin:0 auto 14px;border:0;">[[/if]]
+<p class="t-ink" style="margin:0;font-family:[[body_stack]];font-size:13px;line-height:19px;font-weight:700;letter-spacing:0.5px;text-transform:[[label_case]];color:[[ink]];">[[title]]</p>
+[[if text]]<p class="t-ink2" style="margin:6px 0 0;font-family:[[body_stack]];font-size:14px;line-height:22px;color:[[ink2]];">[[text]]</p>[[/if]]
+</td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: ingredients | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];text-align:left;">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 8px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+[[each items]]<tr><td width="88" valign="top" style="width:88px;padding:20px 0 0;">[[if src]]<img src="[[src]]" alt="[[title]]" width="72" height="72" style="display:block;width:72px;height:72px;border:0;border-radius:36px;font-family:[[body_stack]];font-size:11px;color:[[ink]];">[[/if]]</td>
+<td valign="top" style="padding:22px 0 0;"><p class="t-ink" style="margin:0;font-family:[[body_stack]];font-size:16px;line-height:24px;font-weight:700;color:[[ink]];">[[title]]</p>[[if text]]<p class="t-ink2" style="margin:4px 0 0;font-family:[[body_stack]];font-size:14px;line-height:22px;color:[[ink2]];">[[text]]</p>[[/if]]</td></tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: press_strip | bg=canvas | pad=thin | req=items -->
+<tr><td align="center" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<p class="t-ink2" style="margin:0 0 16px;font-family:[[body_stack]];font-size:10px;line-height:14px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[heading]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:0 auto;"><tr>
+[[each items]]<td class="m-chip" valign="middle" align="center" style="padding:0 14px;">[[if src]]<img src="[[src]]" alt="[[name]]" height="22" style="display:block;height:22px;width:auto;border:0;font-family:[[body_stack]];font-size:12px;font-weight:700;color:[[ink2]];">[[else]]<span class="t-ink2" style="font-family:[[heading_stack]];font-size:15px;line-height:22px;font-weight:600;color:[[ink2]];white-space:nowrap;">[[name]]</span>[[/if]]</td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: media_rows | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 8px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-wrap:balance;">[[heading]]</h2>[[/if]]
+[[each items]]<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" dir="[[if even]]rtl[[else]]ltr[[/if]]" style="margin-top:24px;"><tr>
+<td class="m-stack" dir="ltr" width="[[half_w]]" valign="middle" style="width:[[half_w]]px;padding:0;"><a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[alt]]" width="[[half_w]]" class="m-img" style="display:block;width:100%;max-width:[[half_w]]px;height:auto;border:0;border-radius:[[img_radius]];font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink]];"></a></td>
+<td class="m-stack" dir="ltr" width="[[half_w]]" valign="middle" style="width:[[half_w]]px;padding:16px 0 16px 0;text-align:left;"><div style="padding:0 0 0 24px;">
+[[if label]]<p style="margin:0 0 10px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[label_color]];">[[label]]</p>[[/if]]
+<p class="t-ink" style="margin:0;font-family:[[heading_stack]];font-size:22px;line-height:28px;font-weight:[[heading_weight]];color:[[ink]];text-wrap:balance;">[[title]]</p>
+[[if text]]<p class="t-ink2" style="margin:8px 0 0;font-family:[[body_stack]];font-size:15px;line-height:24px;color:[[ink2]];">[[text]]</p>[[/if]]
+[[if link_label]]<p style="margin:12px 0 0;"><a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:6px 0;font-family:[[body_stack]];font-size:13px;line-height:18px;font-weight:700;color:[[ink]];text-decoration:underline;text-underline-offset:4px;">[[link_label]]</a></p>[[/if]]
+</div></td></tr></table>[[/each]]
+</td></tr>
+
+<!-- BLOCK: mosaic | bg=canvas | pad=bleed | req=items -->
+<tr><td bgcolor="[[bg]]" class="[[bg_class]]" style="padding:0;font-size:0;line-height:0;">
+<a href="[[lead_url]]" target="_blank"><img src="[[lead_src]]" alt="[[lead_alt]]" width="600" class="m-img" style="display:block;width:100%;max-width:600px;height:auto;border:0;font-family:[[body_stack]];font-size:16px;line-height:24px;color:[[ink]];"></a>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"><tr>
+[[each pair]]<td class="m-half" width="296" valign="top" style="width:296px;padding:8px [[pad_r]] 0 [[pad_l]];"><a href="[[url]]" target="_blank"><img src="[[src]]" alt="[[alt]]" width="296" class="m-img" style="display:block;width:100%;max-width:296px;height:auto;border:0;font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink]];"></a></td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: link_list | bg=canvas | pad=section | req=items -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];text-align:left;">
+[[if heading]]<p class="t-ink2" style="margin:0 0 8px;font-family:[[body_stack]];font-size:[[label_size]];line-height:16px;font-weight:[[label_weight]];letter-spacing:[[label_tracking]];text-transform:[[label_case]];color:[[ink2]];">[[heading]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+[[each items]]<tr><td style="border-top:1px solid [[border]];[[if last]]border-bottom:1px solid [[border]];[[/if]]"><a href="[[url]]" target="_blank" class="t-ink" style="display:block;padding:16px 0;font-family:[[heading_stack]];font-size:20px;line-height:26px;font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];text-decoration:none;"><span style="float:right;padding-left:12px;font-family:Arial, sans-serif;">&rarr;</span>[[label]]</a></td></tr>[[/each]]
+</table>
+</td></tr>
+
+<!-- BLOCK: disclaimer | bg=canvas | pad=thin | req=text -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td style="border:1px solid [[border]];padding:14px 18px;font-family:[[body_stack]];font-size:12px;line-height:18px;color:[[ink2]];text-align:left;" class="t-ink2">[[text]]</td></tr></table>
+</td></tr>
+
+<!-- BLOCK: cart_items | bg=canvas | pad=section -->
+<tr><td class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+[[if heading]]<h2 class="m-h2 t-ink" style="margin:0 0 16px;text-align:[[align]];font-family:[[heading_stack]];font-size:[[fs_h2]];line-height:[[lh_h2]];font-weight:[[heading_weight]];text-transform:[[heading_case]];letter-spacing:[[heading_tracking]];color:[[ink]];">[[heading]]</h2>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+{% for item in event.extra.line_items %}<tr><td style="padding:16px 0;border-top:1px solid [[border]];"><table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+<td width="96" valign="top" style="width:96px;"><img src="{{ item.product.images.0.src }}" alt="{{ item.product.title }}" width="96" style="display:block;width:96px;height:auto;border:0;border-radius:[[img_radius]];font-family:[[body_stack]];font-size:13px;color:[[ink]];"></td>
+<td valign="top" style="padding-left:16px;text-align:left;"><p class="t-ink" style="margin:0;font-family:[[heading_stack]];font-size:17px;line-height:23px;color:[[ink]];">{{ item.product.title }}</p>
+<p class="t-ink2" style="margin:6px 0 0;font-family:[[body_stack]];font-size:14px;line-height:20px;color:[[ink2]];">[[w_qty]] {{ item.quantity }}{% if item.line_price %} &middot; {{ item.line_price }}{% endif %}</p></td>
+</tr></table></td></tr>{% endfor %}
+</table>
+</td></tr>
+
+<!-- BLOCK: social | bg=canvas | pad=thin | req=items -->
+<tr><td align="center" class="m-pad [[bg_class]]" bgcolor="[[bg]]" style="padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;"><tr>
+[[each items]]<td style="padding:0 10px;"><a href="[[url]]" target="_blank" class="t-ink" style="display:inline-block;padding:12px 0;font-family:[[body_stack]];font-size:13px;line-height:20px;font-weight:600;color:[[ink]];text-decoration:underline;text-underline-offset:3px;">[[label]]</a></td>[[/each]]
+</tr></table>
+</td></tr>
+
+<!-- BLOCK: footer | bg=canvas | pad=footer | req=signup_reason -->
+<tr><td align="center" class="m-pad [[f_class]]" bgcolor="[[f_bg]]" style="background-color:[[f_bg]];padding:[[pad_t]] [[gutter]] [[pad_b]] [[gutter]];[[if not is_inverse]]border-top:1px solid [[border]];[[/if]]">
+[[if is_rich]]<a href="[[home_url]]" target="_blank" style="text-decoration:none;">[[logo_html]]</a>
+[[if note]]<p style="margin:14px auto 0;max-width:420px;font-family:[[heading_stack]];font-size:17px;line-height:25px;font-weight:[[heading_weight]];color:[[f_text]];">[[note]]</p>[[/if]]
+[[if links]]<p style="margin:22px 0 0;">[[each links]]<a href="[[url]]" target="_blank" style="display:inline-block;padding:8px 10px;font-family:[[body_stack]];font-size:11px;line-height:16px;font-weight:700;letter-spacing:[[label_tracking]];text-transform:uppercase;color:[[f_text]];text-decoration:none;">[[label]]</a>[[/each]]</p>[[/if]]
+[[if social]]<p style="margin:10px 0 0;">[[each social]]<a href="[[url]]" target="_blank" style="display:inline-block;padding:8px 10px;font-family:[[body_stack]];font-size:13px;line-height:18px;font-weight:600;color:[[f_text]];text-decoration:underline;text-underline-offset:3px;">[[label]]</a>[[/each]]</p>[[/if]]
+[[if contact]]<p style="margin:14px 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[f_text2]];">[[contact]]</p>[[/if]]
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:26px 0 0;"><tr><td style="border-top:1px solid [[f_border]];font-size:0;line-height:0;height:1px;">&nbsp;</td></tr></table>[[/if]]
+<p style="margin:[[if is_rich]]22px[[else]]0[[/if]] 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[f_text2]];">[[signup_reason]]</p>
+<p style="margin:14px 0 0;font-family:[[body_stack]];font-size:13px;line-height:20px;color:[[f_text2]];"><a href="{% unsubscribe_link %}" target="_blank" style="display:inline-block;padding:6px 8px;color:[[f_text2]];text-decoration:underline;">[[w_unsubscribe]]</a> <a href="{% manage_preferences_link %}" target="_blank" style="display:inline-block;padding:6px 8px;color:[[f_text2]];text-decoration:underline;">[[w_preferences]]</a> <a href="{% web_view_link %}" target="_blank" style="display:inline-block;padding:6px 8px;color:[[f_text2]];text-decoration:underline;">[[w_web_view]]</a></p>
+<p style="margin:12px 0 0;font-family:[[body_stack]];font-size:12px;line-height:18px;color:[[f_text2]];">{{ organization.name }}<br>{{ organization.full_address }}</p>
+</td></tr>

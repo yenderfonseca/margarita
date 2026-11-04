@@ -1,0 +1,239 @@
+{
+ "_doc": "Starter presets saved from the approved niche demos (2026-11-04 gallery). They carry structure, style, fonts and palette approach only: no photos, copy or brand names. The user's palette and the site's fonts still win; build.py --scaffold <preset> <occasion> starts a spec from one.",
+ "audio": {
+  "niche": "Audio & Smart Home",
+  "style": "clean-tech",
+  "alt_style": "dark-premium",
+  "fonts": {
+   "heading": "Space Grotesk",
+   "body": "Inter",
+   "google": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "White canvas, graphite ink, one hot accent (orange) with dark button text; light-grey product tiles",
+  "example_theme": "welcome",
+  "skeleton": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "quote",
+   "products",
+   "cta",
+   "trust_row",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "candles": {
+  "niche": "Candles & Home Fragrance",
+  "style": "editorial",
+  "alt_style": "natural-craft",
+  "fonts": {
+   "heading": "Playfair Display",
+   "body": "Inter",
+   "google": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Linen canvas, deep warm-brown ink, accent equal to ink (black buttons), flat",
+  "example_theme": "product-drop",
+  "skeleton": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "products",
+   "cta",
+   "quote",
+   "link_list",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "coffee": {
+  "niche": "Specialty Pantry / Coffee & Tea",
+  "style": "natural-craft",
+  "alt_style": "editorial",
+  "fonts": {
+   "heading": "Fraunces",
+   "body": "Work Sans",
+   "google": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Warm cream canvas, dark roast-brown ink, caramel or copper accent; one flat background with band tints",
+  "example_theme": "product-drop",
+  "skeleton": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "products",
+   "cta",
+   "steps",
+   "trust_row",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "jewelry": {
+  "niche": "Jewelry",
+  "style": "quiet-luxury",
+  "alt_style": "dark-premium",
+  "fonts": {
+   "heading": "Cormorant Garamond",
+   "body": "Montserrat",
+   "google": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "White canvas, black ink and accent, faint grey band; quiet, almost monochrome",
+  "example_theme": "product-drop",
+  "skeleton": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "media_rows",
+   "cta",
+   "feature_grid",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "outdoor": {
+  "niche": "Camping & Outdoor Gear",
+  "style": "bold-retail",
+  "alt_style": "natural-craft",
+  "fonts": {
+   "heading": "Archivo",
+   "body": "Inter",
+   "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Inter:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Stone canvas, forest-black ink, earth accent (copper, rust); a darker stone band",
+  "example_theme": "product-drop",
+  "skeleton": [
+   "announcement",
+   "header",
+   "hero_image",
+   "hero_text",
+   "mosaic",
+   "cta",
+   "trust_row",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "pet": {
+  "niche": "Pet Supplies & Lifestyle",
+  "style": "soft-pop",
+  "alt_style": "playful-color",
+  "fonts": {
+   "heading": "Outfit",
+   "body": "Outfit",
+   "google": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+  },
+  "palette_approach": "Warm off-white canvas, charcoal ink, one bright friendly accent (sunny yellow) with dark button text",
+  "example_theme": "education",
+  "skeleton": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "steps",
+   "ingredients",
+   "cta",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "skincare": {
+  "niche": "Skincare (Clinical)",
+  "style": "clean-tech",
+  "alt_style": "editorial",
+  "fonts": {
+   "heading": "DM Serif Display",
+   "body": "DM Sans",
+   "google": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;700&family=DM+Sans:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "White canvas, deep teal-black ink, a single calm accent (teal, sage); warm off-white band for quotes",
+  "example_theme": "education",
+  "skeleton": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "feature_grid",
+   "quote",
+   "cta",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "spirits": {
+  "niche": "Wine Beer & Spirits",
+  "style": "dark-premium",
+  "alt_style": "retro-warm",
+  "fonts": {
+   "heading": "Cormorant Garamond",
+   "body": "Inter",
+   "google": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Near-black canvas, warm parchment ink, amber or brass accent; dark everywhere",
+  "example_theme": "brand-story",
+  "skeleton": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "story",
+   "cta",
+   "disclaimer",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "streetwear": {
+  "niche": "Streetwear",
+  "style": "mono-brutal",
+  "alt_style": "bold-retail",
+  "fonts": {
+   "heading": "Archivo",
+   "body": "Karla",
+   "google": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Karla:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Pure white canvas, near-black ink and accent (black buttons), light-grey product tiles",
+  "example_theme": "product-drop",
+  "skeleton": [
+   "announcement",
+   "header",
+   "hero_image",
+   "hero_text",
+   "products",
+   "cta",
+   "link_list",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ },
+ "supplements": {
+  "niche": "Supplements & Vitamins",
+  "style": "natural-craft",
+  "alt_style": "clean-tech",
+  "fonts": {
+   "heading": "Fraunces",
+   "body": "Inter",
+   "google": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Inter:wght@400;600;700&display=swap"
+  },
+  "palette_approach": "Blush or cream canvas, plum-black ink, a saturated berry accent with white button text",
+  "example_theme": "restock",
+  "skeleton": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "feature_grid",
+   "press_strip",
+   "cta",
+   "disclaimer",
+   "footer"
+  ],
+  "header": "centered",
+  "footer": "simple"
+ }
+}

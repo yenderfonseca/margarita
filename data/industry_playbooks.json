@@ -1,0 +1,245 @@
+{
+ "_doc": "Kept only what Margarita may use: tone, power words (only those the brand would say), banned phrases (pass to preflight --banned), button shape and photo guidance. Removed on purpose: palettes and fonts (the user's palette and the site's fonts win), subject formulas with fake urgency, objection remedies with unsourced claims, and flow benchmarks that conflict with references/campaign-selection.md.",
+ "fashion_apparel": {
+  "name": "Fashion & Apparel",
+  "archetype": "Haute Editorial & Contemporary Minimalist",
+  "tone_of_voice": "Understated confidence, curated taste, aspirational yet approachable.",
+  "power_words": [
+   "The Edit",
+   "Silhouettes",
+   "Drape",
+   "Tailored",
+   "In Rotation",
+   "Heavyweight",
+   "Sculpted",
+   "Transitional",
+   "Heirloom"
+  ],
+  "banned_phrases": [
+   "Crazy cheap",
+   "Blowout sale",
+   "Hurry before gone",
+   "Click here to buy",
+   "Unbelievable prices"
+  ],
+  "button_shape": {
+   "radius": "0px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.12em"
+  },
+  "photography": {
+   "hero_ratio": "4:5 (vertical portrait)",
+   "composition": "Full-body context in natural ambient light followed by macro detail texture slice (fabric weave, ribbing, hardware)"
+  }
+ },
+ "beauty_skincare": {
+  "name": "Beauty & Skincare",
+  "archetype": "Dewy Clinical & Sensorial Clean-Beauty",
+  "tone_of_voice": "Intimate best-friend energy backed by clinical dermatological clarity.",
+  "power_words": [
+   "Dewy",
+   "Sensorial",
+   "Barrier Repair",
+   "Biomimetic",
+   "Glow",
+   "Active Botanical",
+   "Microbiome",
+   "Hydration Lock",
+   "Clinical Proof"
+  ],
+  "banned_phrases": [
+   "Miracle cure",
+   "Eraser of aging",
+   "Chemical free (unscientific)",
+   "Cheap makeup"
+  ],
+  "button_shape": {
+   "radius": "9999px",
+   "text_transform": "none",
+   "letter_spacing": "0.01em"
+  },
+  "photography": {
+   "hero_ratio": "1:1 or 4:5",
+   "composition": "Formula texture swatch (dewy cream, golden oil drop, velvet foam) sitting directly adjacent to packaging bottle."
+  }
+ },
+ "food_beverage": {
+  "name": "Food & Beverage",
+  "archetype": "Appetite-Driven Retro Pop & Clean Tabletop",
+  "tone_of_voice": "Witty, punchy, appetizing, self-aware, and anti-supermarket junk.",
+  "power_words": [
+   "Cold-Pressed",
+   "Picual Olive",
+   "Zero Added Sugar",
+   "13g Protein",
+   "Unrefined",
+   "Crushable",
+   "Real Fruit",
+   "Crisp Pour"
+  ],
+  "banned_phrases": [
+   "Diet food",
+   "Guilt-free (dated trope)",
+   "Nutritious and delicious (clich\u00e9)",
+   "Eat clean"
+  ],
+  "button_shape": {
+   "radius": "8px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.06em"
+  },
+  "photography": {
+   "hero_ratio": "16:9 or 1:1 dynamic action",
+   "composition": "The Squeeze/Pour/Bite: Liquid mid-stream, cheese pull, or cereal bowl splash with genuine high-saturation ingredients."
+  }
+ },
+ "home_living": {
+  "name": "Home & Living",
+  "archetype": "Architectural Serenity & Restorative Domesticity",
+  "tone_of_voice": "Restorative, design-conscious, sensory, domestic warmth.",
+  "power_words": [
+   "Loom-Woven",
+   "Long-Staple",
+   "Sanctuary",
+   "Breathable",
+   "Architectural",
+   "Heirloom Weave",
+   "Restorative",
+   "Golden Hour"
+  ],
+  "banned_phrases": [
+   "Cheap furniture",
+   "Blowout bed sale",
+   "Mattress liquidation",
+   "Mega discount"
+  ],
+  "button_shape": {
+   "radius": "4px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.1em"
+  },
+  "photography": {
+   "hero_ratio": "16:9 or 3:2 landscape sanctuary shot",
+   "composition": "The Living Vignette: Morning light through sheer curtains landing on rumpled linen sheets or a steaming cup next to cast iron."
+  }
+ },
+ "sports_outdoor": {
+  "name": "Sports, Fitness & Outdoor",
+  "archetype": "Rugged Technical Precision & Grit",
+  "tone_of_voice": "Gritty, uncompromising, disciplined, passionate, mission-driven.",
+  "power_words": [
+   "Engineered",
+   "DWR Finish",
+   "4-Way Stretch",
+   "Ripstop",
+   "Thermal Lock",
+   "Ultralight",
+   "Mil-Spec",
+   "Built for the Grind",
+   "Endurance"
+  ],
+  "banned_phrases": [
+   "Comfy athleisure (unless loungewear)",
+   "Trendy fashion gym clothes",
+   "Cheap fitness gear"
+  ],
+  "button_shape": {
+   "radius": "0px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.14em"
+  },
+  "photography": {
+   "hero_ratio": "16:9 or 4:5 gritty action",
+   "composition": "The Kinetic Peak: Athlete mid-movement, muscle definition, water droplets repelling off DWR shell fabric."
+  }
+ },
+ "pet_supplies": {
+  "name": "Pet Supplies & Lifestyle",
+  "archetype": "Joyful Anthropomorphism & Human-Grade Trust",
+  "tone_of_voice": "Humorous, devoted pet-parent perspective, playful, unconditional love.",
+  "power_words": [
+   "Human-Grade",
+   "Super-Chewer Proof",
+   "Vet-Approved",
+   "Tail-Wagging",
+   "Tummy-Safe",
+   "Grain-Free",
+   "Reinforced Seams",
+   "Zoomies"
+  ],
+  "banned_phrases": [
+   "Animal feed",
+   "Cheap pet plastic",
+   "Filler ingredients"
+  ],
+  "button_shape": {
+   "radius": "9999px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.06em"
+  },
+  "photography": {
+   "hero_ratio": "1:1 or 4:5 pet eye-level portrait",
+   "composition": "The Happy Dog/Cat: Directly facing the camera with head tilted, interacting happily with the toy, harness, or meal bowl."
+  }
+ },
+ "tech_gadgets": {
+  "name": "Tech & Gadgets",
+  "archetype": "Brutalist Precision & Industrial Design",
+  "tone_of_voice": "Precise, efficient, engineering-first, articulate, frictionless.",
+  "power_words": [
+   "Engineered",
+   "Low-Latency",
+   "Anodized",
+   "Modular",
+   "Firmware",
+   "Plug & Play",
+   "Seamless Sync",
+   "Zero Latency",
+   "Machined"
+  ],
+  "banned_phrases": [
+   "Mind-blowing tech",
+   "Next-gen magic (empty hype)",
+   "You won't believe your eyes"
+  ],
+  "button_shape": {
+   "radius": "6px",
+   "text_transform": "none",
+   "letter_spacing": "0.02em"
+  },
+  "photography": {
+   "hero_ratio": "16:9 cinematic render or hardware macro",
+   "composition": "The Studio Exploded View: Ambient floating hardware with lighting catching anodized aluminum, matte polycarbonate, or laser-cut edges."
+  }
+ },
+ "health_wellness": {
+  "name": "Health & Wellness",
+  "archetype": "Nutritional Transparency & Habit Architecture",
+  "tone_of_voice": "Authoritative, habit-focused, calm, transparent, scientifically backed.",
+  "power_words": [
+   "Bioavailable",
+   "Synergistic",
+   "NSF-Certified",
+   "Adaptogenic",
+   "Gut-Brain Axis",
+   "Cellular Energy",
+   "Cold-Extracted",
+   "Clinical Dose"
+  ],
+  "banned_phrases": [
+   "Miracle pill",
+   "Instant cure",
+   "Detox tea",
+   "Magic potion"
+  ],
+  "button_shape": {
+   "radius": "6px",
+   "text_transform": "uppercase",
+   "letter_spacing": "0.08em"
+  },
+  "photography": {
+   "hero_ratio": "1:1 or 4:5 ritual shot",
+   "composition": "The Morning Habit: Natural morning window light, scoop of green powder or amber tincture into clean glass of water."
+  }
+ }
+}
