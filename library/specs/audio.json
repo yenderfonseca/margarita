@@ -1,0 +1,154 @@
+{
+ "library": {
+  "niche_key": "audio",
+  "niche": "Audio & Smart Home",
+  "alternates": [
+   "dark-premium"
+  ]
+ },
+ "style": "clean-tech",
+ "utm_prefix": "audio",
+ "brand": {
+  "name": "Halden Audio",
+  "home_url": "https://haldenaudio.test/",
+  "heading_stack": "'Space Grotesk', Helvetica, Arial, sans-serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#111418",
+   "accent": "#D95E29",
+   "band": "#F3F4F5"
+  }
+ },
+ "_alt": "dark-premium",
+ "emails": [
+  {
+   "slug": "audio",
+   "theme": "welcome",
+   "subject": [
+    "Welcome to Halden Audio",
+    "Built in Cambridge, tuned by ear"
+   ],
+   "preheader": "Thirty years of amplifiers, and what to listen to first.",
+   "idea": "audio demo",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "Speakers",
+       "url": "https://haldenaudio.test/speakers"
+      },
+      {
+       "label": "Headphones",
+       "url": "https://haldenaudio.test/headphones"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "Headphones resting on a table",
+     "url": "https://haldenaudio.test/about"
+    },
+    {
+     "type": "hero_text",
+     "headline": "Sound, the way it was played",
+     "subhead": "We tune every product by ear before it leaves the lab.",
+     "greeting_default": "there"
+    },
+    {
+     "type": "quote",
+     "quote": "The most natural sound at this price",
+     "author": "Hi-Fi Weekly"
+    },
+    {
+     "type": "products",
+     "heading": "Where to start",
+     "items": [
+      {
+       "title": "Melo Earbuds",
+       "price": "$149",
+       "url": "https://haldenaudio.test/melo",
+       "src": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      },
+      {
+       "title": "Bookshelf Pair",
+       "price": "$899",
+       "url": "https://haldenaudio.test/cx",
+       "src": "https://images.unsplash.com/photo-1786501135822-65c1df3703e6?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Explore the range",
+     "url": "https://haldenaudio.test/range"
+    },
+    {
+     "type": "trust_row",
+     "items": [
+      {
+       "text": "2-year warranty"
+      },
+      {
+       "text": "Free returns"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Halden Audio list.",
+     "layout": "inverse",
+     "note": "Tuned by ear since 1994.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://haldenaudio.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://haldenaudio.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://haldenaudio.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ],
+ "popups": [
+  {
+   "slug": "waitlist",
+   "preset": "launch-waitlist",
+   "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+   "label": "Coming soon",
+   "headline": "Melo is almost here",
+   "subhead": "Our first earbuds. Join the list to hear first.",
+   "button": "Join the waitlist",
+   "countdown_to": "Dec 4, 9 am ET",
+   "success_headline": "You are on the list",
+   "success_text": "We will email you on launch day."
+  }
+ ]
+}

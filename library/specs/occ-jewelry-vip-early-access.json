@@ -1,0 +1,117 @@
+{
+ "library": {
+  "niche_key": "jewelry",
+  "niche": "Jewelry",
+  "alternates": [],
+  "occasion": "vip-early-access",
+  "occasion_kind": "product"
+ },
+ "style": "dark-premium",
+ "utm_prefix": "jewelry",
+ "brand": {
+  "name": "Maren Fine",
+  "home_url": "https://marenfine.test/",
+  "heading_stack": "'Cormorant Garamond', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Montserrat', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#1A1A1A",
+   "accent": "#1A1A1A",
+   "on_accent": "#FFFFFF",
+   "band": "#F7F7F7"
+  }
+ },
+ "emails": [
+  {
+   "slug": "jewelry-vip-early-access",
+   "theme": "sale",
+   "subject": [
+    "You are early: the link necklace opens today",
+    "Early access to the link necklace"
+   ],
+   "preheader": "48 hours before everyone else. Opens now for our VIP list.",
+   "idea": "jewelry-vip-early-access",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "inverse",
+     "links": [
+      {
+       "label": "Necklaces",
+       "url": "https://marenfine.test/necklaces"
+      },
+      {
+       "label": "Bracelets",
+       "url": "https://marenfine.test/bracelets"
+      },
+      {
+       "label": "Watches",
+       "url": "https://marenfine.test/watches"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1704637397876-36235419309d?w=1200&h=1100&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A gold necklace on a white table",
+     "url": "https://marenfine.test/vip"
+    },
+    {
+     "type": "hero_text",
+     "label": "VIP early access",
+     "headline": "The link necklace opens early, for you",
+     "subhead": "From today until Thursday at 9 am ET, only for this list."
+    },
+    {
+     "type": "story",
+     "body": [
+      "Solid 18k gold links, made in one small run."
+     ],
+     "signature": "Maren"
+    },
+    {
+     "type": "cta",
+     "label": "Shop early access",
+     "url": "https://marenfine.test/vip"
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Maren Fine list.",
+     "layout": "inverse",
+     "note": "Solid gold, made to last.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://marenfine.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://marenfine.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://marenfine.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

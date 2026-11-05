@@ -19,7 +19,7 @@ Marketing email with taste: the Margarita library's evidence on what curated DTC
 order, subject habits, flow timing) plus a templating engine with 13 styles and 31 blocks, turned
 into finished emails a person can import into Klaviyo and send.
 
-Version 2.1 (2026-11-05). Record it in notes.md. This skill is self-contained and works in any agent
+Version 2.2 (2026-11-05). Record it in notes.md. This skill is self-contained and works in any agent
 that reads `SKILL.md` skills (Claude Code, Claude.ai, Google Antigravity). Every path below is
 relative to this skill's folder, the folder that holds this file (for example
 `~/.claude/skills/margarita/` or `~/.gemini/config/skills/margarita/`).
@@ -73,7 +73,7 @@ MARGARITA_PREFLIGHT: link=<ok via firecrawl|ok via webfetch|ok via browser|unrea
 |---|---|---|
 | 1 | Read the request: link, asset folder, palette, brief, output folder | |
 | 2 | **Intake**, then print the setup line. Fetch the link (Firecrawl if installed, else the agent's web fetch or browser; pages saved to `.source/`), inventory the asset folder, map the palette to roles with contrast checks. Start `notes.md` with the brand profile and the inferred list | `references/brand-intake.md` |
-| 3 | **Decide** niche (`data/niches.csv`, or a saved preset in `data/presets.json`), occasion (`data/occasions.json`), style, number of emails, audience, playbook. Start the spec with `build.py --scaffold <preset or niche> <occasion>`. One-line assumption each in notes.md | `references/campaign-selection.md` (sections 1, 3, 3b), `data/styles.json`, `data/themes.csv`, `data/industry_playbooks.json` |
+| 3 | **Decide** niche (`data/niches.csv`, or a saved preset in `data/presets.json`), occasion (`data/occasions.json`), style, number of emails, audience, playbook. Check `library/INDEX.md` (or `scripts/library.py find --niche <x> --occasion <y>`) for a matching example and its block order. Start the spec with `build.py --scaffold <preset or niche> <occasion>`. One-line assumption each in notes.md | `references/campaign-selection.md` (sections 1, 3, 3b), `data/styles.json`, `data/themes.csv`, `data/industry_playbooks.json` |
 | 4 | **Optional:** if a Margarita library MCP (tools `search_emails`, `search_components`) is connected, look up 2 to 3 reference emails by niche and intention for layout cues only | `references/campaign-selection.md` section 6 |
 | 5 | **Write** per email: subject A and B, preview text, the copy for each block, alt text, CTA label, sources | `references/copy.md` |
 | 6 | **Build.** Put it all in `<out>/<brand-slug>/spec.json` and run `scripts/build.py`. It renders, copies images, zips, writes `email.md` and runs preflight. Fix the spec until every email PASSes; never hand-edit `email.html` | `references/spec.md`, `references/layout.md`, `references/klaviyo.md` |
@@ -95,9 +95,11 @@ self-tests `build.py --self-test` and `preflight.py --self-test`. render.py need
 (`pip install playwright`); if it cannot run, say so in notes.md and do the screenshot review in a
 browser instead.
 
-**When the user wants to choose a look** ("show me options"): build the first email with
-`--styles` set to the niche's 2 or 3 styles (or `all`), run `gallery.py`, show the gallery, and
-continue with their pick.
+**When the user wants to choose a look** ("show me options"): first show the matching previews from
+`library/INDEX.md`: the style tour shows one email in all 13 styles, and each niche entry shows its
+primary and alternate style. No build is needed for that. Then build the first real email with
+`--styles` set to the 2 or 3 styles they liked, run `gallery.py`, show the gallery, and continue with
+their pick. Library entries are fictional demos: borrow structure and look, never their facts.
 
 ## Output
 
@@ -142,9 +144,11 @@ Final reply to the user, short:
 | `data/popups.json`, `references/popups.md` | 8 Klaviyo sign-up form presets and the popup rules |
 | `data/themes.csv`, `data/rules.csv`, `data/industry_playbooks.json` | Theme openers and subject habits, the rules index, 8 playbooks (voice, banned phrases, button shape, photo rules) |
 | `assets/shell.html`, `assets/blocks.html` | Email shell and the 31-block library in the engine's `[[ ]]` syntax |
+| `library/INDEX.md`, `library/index.json` | The bundled example library: fictional demo brands by niche, occasion and style, each with a spec (`library/specs/`) and a preview (`library/previews/`), plus a style tour of all 13 styles |
 | `assets/example.spec.json`, `assets/example.html` | Fixture spec covering every block; a built email that passes preflight |
 | `scripts/build.py` | Templating engine: spec.json to emails, images, zip, email.md, preflight |
 | `scripts/preflight.py` | The linter (stdlib) |
 | `scripts/render.py` | Render check with screenshots (Playwright) |
 | `scripts/gallery.py` | Preview page of every built email and popup (stdlib) |
 | `scripts/popup.py` | Popup mockups and Klaviyo build sheets (stdlib) |
+| `scripts/library.py` | `find` queries the library (stdlib); `index` rebuilds its previews, index.json and INDEX.md (Playwright) |

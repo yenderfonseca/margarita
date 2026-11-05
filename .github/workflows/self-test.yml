@@ -13,3 +13,6 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python scripts/preflight.py --self-test
       - run: python scripts/build.py --self-test
+      - name: build every library spec
+        run: |
+          for f in library/specs/*.json; do python scripts/build.py "$f" --out "/tmp/lib/$(basename "$f" .json)" || exit 1; done

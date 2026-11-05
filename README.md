@@ -33,6 +33,7 @@ Prefer reading in a browser? The same instructions are on the website, in
 - [How it works](#how-it-works)
 - [The laws](#the-laws)
 - [Styles, blocks, niches, occasions and popups](#styles-blocks-niches-occasions-and-popups)
+- [The library](#the-library)
 - [Scripts (command line)](#scripts-command-line)
 - [The spec file](#the-spec-file)
 - [Output folder](#output-folder)
@@ -79,6 +80,16 @@ To install it, put the folder where your agent looks for skills.
 - **Optional, for reading the brand site:** the [Firecrawl CLI](https://www.firecrawl.dev/).
   Without it, the agent uses its own web fetch or browser tool.
 - **A Klaviyo account,** to send. Building and previewing emails works without one.
+
+### Any agent, one command
+
+```bash
+npx skills add yenderfonseca/margarita
+```
+
+The open [`skills`](https://github.com/vercel-labs/skills) installer clones the repository once and
+links it into every agent it finds on your machine (Claude Code, Antigravity, Cursor, Codex and
+others). Update later with `npx skills update margarita`. The sections below show manual installs.
 
 ### Claude Code
 
@@ -292,6 +303,25 @@ or restock waitlist, holiday early access, and preference quiz. For each form yo
 a build sheet with the exact Klaviyo form-editor settings: timing, frequency, targeting, steps,
 copy and colors. [`references/popups.md`](references/popups.md) has the rules.
 
+## The library
+
+`library/` ships inside the skill. It holds example emails from fictional demo brands, by niche,
+occasion and style, so the agent can show you what a style looks like before it builds anything.
+
+- **`library/INDEX.md`** is the catalog the agent reads. It includes a style tour (one email in all
+  13 styles) and a table of niche and occasion examples, each with its previews.
+- **`library/specs/*.json`** are real specs: `build.py` rebuilds any of them in seconds.
+- **`library/previews/*.jpg`** are thumbnails of the first screen of each email.
+
+```bash
+python3 scripts/library.py find --niche candles        # also --style dark-premium, --occasion bfcm
+python3 scripts/build.py library/specs/candles.json --out /tmp/candles
+```
+
+The examples supply structure and look only. Every fact in your emails still comes from your brand.
+To add an entry, drop a spec with a `library` block into `library/specs/` and run
+`python3 scripts/library.py index` (needs Playwright). CI builds every library spec on each push.
+
 ## Scripts (command line)
 
 All scripts live in `scripts/`. Each one prints its usage with `--help`.
@@ -459,7 +489,10 @@ The repository root is the skill folder, so cloning it is the whole install.
 | `references/popups.md` | Sign-up form rules and the popup spec |
 | `data/` | Styles, niches, presets, occasions, popups, themes, rules, industry playbooks |
 | `assets/` | The email shell, the 31-block library, the example spec and a built example |
-| `scripts/` | `build.py`, `preflight.py`, `render.py`, `gallery.py`, `popup.py` |
+| `scripts/` | `build.py`, `preflight.py`, `render.py`, `gallery.py`, `popup.py`, `library.py` |
+| `library/` | The example library: `INDEX.md`, `index.json`, `specs/`, `previews/` |
+| `evals/test-prompts.json` | Sample requests with the behavior each should produce, for checking the skill after changes |
+| `agents/openai.yaml` | Display metadata for Codex-style agents |
 | `docs/` | The demo spec and README images |
 
 ## FAQ

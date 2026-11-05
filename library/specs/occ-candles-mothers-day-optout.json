@@ -1,0 +1,107 @@
+{
+ "library": {
+  "niche_key": "candles",
+  "niche": "Candles & Home Fragrance",
+  "alternates": [],
+  "occasion": "mothers-day",
+  "occasion_kind": "calendar"
+ },
+ "style": "editorial",
+ "utm_prefix": "candles",
+ "brand": {
+  "name": "Hearth Field",
+  "home_url": "https://hearthfield.test/",
+  "heading_stack": "'Playfair Display', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#F6F1EA",
+   "ink": "#2A2522",
+   "accent": "#2A2522",
+   "on_accent": "#F6F1EA"
+  }
+ },
+ "emails": [
+  {
+   "slug": "candles-mothers-day-optout",
+   "theme": "announcement",
+   "subject": [
+    "A quick question before Mother's Day",
+    "Would you like to skip Mother's Day emails?"
+   ],
+   "preheader": "Not everyone celebrates. One click and we will leave you out.",
+   "idea": "candles-mothers-day-optout",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "centered",
+     "links": [
+      {
+       "label": "Candles",
+       "url": "https://hearthfield.test/candles"
+      },
+      {
+       "label": "Home",
+       "url": "https://hearthfield.test/home"
+      },
+      {
+       "label": "Gifts",
+       "url": "https://hearthfield.test/gifts"
+      }
+     ]
+    },
+    {
+     "type": "letter",
+     "greeting_default": "friend",
+     "body": [
+      "Mother's Day is a hard day for some of us.",
+      "If you would rather not hear from us about it this year, tap below and we will leave you out of those emails. Everything else stays the same."
+     ],
+     "signoff": "With care,",
+     "signature": "Ines, Hearth Field"
+    },
+    {
+     "type": "cta",
+     "label": "Skip Mother's Day emails",
+     "url": "{% manage_preferences_link %}"
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Hearth Field list.",
+     "layout": "rich",
+     "note": "Hand-poured in small batches.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://hearthfield.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://hearthfield.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://hearthfield.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

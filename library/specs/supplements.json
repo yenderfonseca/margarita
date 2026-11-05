@@ -1,0 +1,128 @@
+{
+ "library": {
+  "niche_key": "supplements",
+  "niche": "Supplements & Vitamins",
+  "alternates": [
+   "clean-tech"
+  ]
+ },
+ "style": "natural-craft",
+ "utm_prefix": "supplements",
+ "brand": {
+  "name": "Daily Roots",
+  "home_url": "https://dailyroots.test/",
+  "heading_stack": "'Fraunces', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFF8F3",
+   "ink": "#2E1F2B",
+   "accent": "#A23668",
+   "on_accent": "#FFFFFF"
+  }
+ },
+ "_alt": "clean-tech",
+ "emails": [
+  {
+   "slug": "supplements",
+   "theme": "restock",
+   "subject": [
+    "Digestion Drops are back in stock",
+    "The bottle that sold out in nine days"
+   ],
+   "preheader": "Back today. Two capsules after meals.",
+   "idea": "supplements demo",
+   "blocks": [
+    {
+     "type": "header"
+    },
+    {
+     "type": "hero_text",
+     "label": "Back in stock",
+     "headline": "Digestion Capsules are back",
+     "subhead": "Two capsules after meals. Made with ginger and fennel."
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1763668177859-0ed5669a795e?w=1200&h=900&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "An amber supplement jar on a kitchen counter",
+     "url": "https://dailyroots.test/drops"
+    },
+    {
+     "type": "feature_grid",
+     "items": [
+      {
+       "title": "Ginger root",
+       "text": "Traditionally used after meals."
+      },
+      {
+       "title": "Fennel seed",
+       "text": "Mild and warming."
+      },
+      {
+       "title": "No sugar",
+       "text": "Just plant extracts."
+      }
+     ]
+    },
+    {
+     "type": "press_strip",
+     "heading": "As featured in",
+     "items": [
+      {
+       "name": "Wellness Weekly"
+      },
+      {
+       "name": "The Kitchen Report"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop Digestion Capsules",
+     "url": "https://dailyroots.test/drops"
+    },
+    {
+     "type": "disclaimer",
+     "text": "These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease."
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Daily Roots list.",
+     "layout": "rich",
+     "note": "Plant-based, made in small runs.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://dailyroots.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://dailyroots.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://dailyroots.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

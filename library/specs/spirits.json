@@ -1,0 +1,121 @@
+{
+ "library": {
+  "niche_key": "spirits",
+  "niche": "Wine Beer & Spirits",
+  "alternates": [
+   "retro-warm"
+  ]
+ },
+ "style": "dark-premium",
+ "utm_prefix": "spirits",
+ "brand": {
+  "name": "Ember & Oak",
+  "home_url": "https://emberandoak.test/",
+  "heading_stack": "'Cormorant Garamond', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#14110F",
+   "ink": "#F3ECE2",
+   "accent": "#C9975A",
+   "on_accent": "#14110F"
+  }
+ },
+ "_alt": "retro-warm",
+ "emails": [
+  {
+   "slug": "spirits",
+   "theme": "brand-story",
+   "subject": [
+    "Fourteen years in a Kentucky rickhouse",
+    "The barrel we almost did not open"
+   ],
+   "preheader": "Our oldest release, bottled at cask strength. 600 bottles.",
+   "idea": "spirits demo",
+   "blocks": [
+    {
+     "type": "header"
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1707422058118-5169109ef116?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A bar wall lined with bottles",
+     "url": "https://emberandoak.test/14"
+    },
+    {
+     "type": "hero_text",
+     "label": "Barrel 14",
+     "headline": "Fourteen years, one barrel",
+     "subhead": "Cask strength, unfiltered, 600 bottles."
+    },
+    {
+     "type": "story",
+     "body": [
+      "We filled this barrel in 2012 and forgot it on the top floor, where summers run hottest.",
+      "It came out dark, dry and full of toasted oak."
+     ],
+     "signature": "The Ember & Oak cellar team"
+    },
+    {
+     "type": "cta",
+     "label": "Reserve a bottle",
+     "url": "https://emberandoak.test/14"
+    },
+    {
+     "type": "disclaimer",
+     "text": "For adults of legal drinking age only. Please enjoy responsibly."
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Ember & Oak list.",
+     "layout": "inverse",
+     "note": "Distilled and aged in Kentucky.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://emberandoak.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://emberandoak.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://emberandoak.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ],
+ "popups": [
+  {
+   "slug": "sms",
+   "preset": "sms-two-step",
+   "headline": "First word on new barrels",
+   "subhead": "Releases sell out. Hear about them first.",
+   "button": "Join the list",
+   "sms_headline": "Want a text when a barrel drops?",
+   "sms_disclosure": "By submitting, you agree to receive recurring automated marketing texts from Ember & Oak at the number provided. Consent is not a condition of purchase. Msg and data rates may apply. Reply STOP to cancel. Must be 21 or older.",
+   "success_headline": "You are on the list",
+   "success_text": "Next release: January.",
+   "age_gate": "21"
+  }
+ ]
+}

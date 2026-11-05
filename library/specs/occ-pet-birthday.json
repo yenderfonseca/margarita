@@ -1,0 +1,101 @@
+{
+ "library": {
+  "niche_key": "pet",
+  "niche": "Pet Supplies & Lifestyle",
+  "alternates": [],
+  "occasion": "birthday",
+  "occasion_kind": "relationship"
+ },
+ "style": "playful-color",
+ "utm_prefix": "pet",
+ "brand": {
+  "name": "Tabby & Co",
+  "home_url": "https://tabbyandco.test/",
+  "heading_stack": "'Outfit', Helvetica, Arial, sans-serif",
+  "body_stack": "'Outfit', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap",
+  "palette": {
+   "canvas": "#FFFDF7",
+   "ink": "#1F1F1F",
+   "accent": "#FFE45C",
+   "on_accent": "#1F1F1F",
+   "band": "#F3EEE3"
+  }
+ },
+ "emails": [
+  {
+   "slug": "pet-birthday",
+   "theme": "welcome-offer",
+   "subject": [
+    "Happy birthday, {{ first_name|default:'friend' }}",
+    "A birthday treat for your cat"
+   ],
+   "preheader": "A free bag of treats with your next box, this week only.",
+   "idea": "pet-birthday",
+   "blocks": [
+    {
+     "type": "header"
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1596854372745-0906a0593bca?w=1200&h=1100&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "An orange tabby cat on a yellow background",
+     "url": "https://tabbyandco.test/box"
+    },
+    {
+     "type": "hero_text",
+     "label": "Birthday week",
+     "headline": "A birthday treat for {{ person|lookup:'Pet name'|default:'your cat' }}",
+     "subhead": "Add code BDAY at checkout for a free bag of chicken bites with your next box."
+    },
+    {
+     "type": "offer_code",
+     "label": "Birthday code",
+     "code": "BDAY",
+     "terms": "One free 80 g bag with any order over $30, valid 7 days."
+    },
+    {
+     "type": "cta",
+     "label": "Claim the treats",
+     "url": "https://tabbyandco.test/box"
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Tabby & Co list.",
+     "layout": "rich",
+     "note": "Fresh food for cats, delivered.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://tabbyandco.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://tabbyandco.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://tabbyandco.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

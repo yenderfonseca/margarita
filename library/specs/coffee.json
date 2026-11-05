@@ -1,0 +1,173 @@
+{
+ "library": {
+  "niche_key": "coffee",
+  "niche": "Specialty Pantry / Coffee & Tea",
+  "alternates": [
+   "editorial"
+  ]
+ },
+ "style": "natural-craft",
+ "utm_prefix": "coffee",
+ "brand": {
+  "name": "Ridgeline Roasters",
+  "home_url": "https://ridgelineroasters.test/",
+  "heading_stack": "'Fraunces', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Work Sans', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FBF6EE",
+   "ink": "#2B2118",
+   "accent": "#8B5E34"
+  }
+ },
+ "_alt": "editorial",
+ "emails": [
+  {
+   "slug": "coffee",
+   "theme": "product-drop",
+   "subject": [
+    "Two new single origins just landed",
+    "Ethiopia and Burundi, roasted Monday"
+   ],
+   "preheader": "Washed Ethiopia for bright mornings, Burundi for the slow ones.",
+   "idea": "coffee demo",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "centered",
+     "links": [
+      {
+       "label": "Coffee",
+       "url": "https://ridgelineroasters.test/coffee"
+      },
+      {
+       "label": "Brew",
+       "url": "https://ridgelineroasters.test/brew"
+      },
+      {
+       "label": "Subscribe",
+       "url": "https://ridgelineroasters.test/subscribe"
+      }
+     ]
+    },
+    {
+     "type": "split_hero",
+     "src": "https://images.unsplash.com/photo-1515860734122-e0d771b36d3e?w=600&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A barista pouring coffee behind the counter",
+     "url": "https://ridgelineroasters.test/collections/new",
+     "label": "New origins",
+     "headline": "Two new coffees for the cold months",
+     "subhead": "Small lots, roasted every Monday and shipped the same week."
+    },
+    {
+     "type": "products",
+     "heading": "On the roaster this week",
+     "items": [
+      {
+       "title": "Ethiopia Banko",
+       "price": "$22",
+       "url": "https://ridgelineroasters.test/products/ethiopia",
+       "src": "https://images.unsplash.com/photo-1695245503558-5cdb37f49092?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "link_label": "Shop now"
+      },
+      {
+       "title": "Burundi Campazi",
+       "price": "$21",
+       "url": "https://ridgelineroasters.test/products/burundi",
+       "src": "https://images.unsplash.com/photo-1562051036-e0eea191d42f?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "link_label": "Shop now"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop new coffees",
+     "url": "https://ridgelineroasters.test/collections/new"
+    },
+    {
+     "type": "steps",
+     "heading": "Brew it like we do",
+     "items": [
+      {
+       "title": "15 grams, 250 grams water",
+       "text": "A 1:16 ratio for a clean cup."
+      },
+      {
+       "title": "Water at 94 degrees",
+       "text": "Just off the boil."
+      },
+      {
+       "title": "Three minutes",
+       "text": "Then press or pour."
+      }
+     ]
+    },
+    {
+     "type": "trust_row",
+     "items": [
+      {
+       "text": "Roasted Mondays"
+      },
+      {
+       "text": "Free shipping over $40"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Ridgeline Roasters list.",
+     "layout": "rich",
+     "note": "Roasted every Monday in small batches.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://ridgelineroasters.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://ridgelineroasters.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://ridgelineroasters.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ],
+ "popups": [
+  {
+   "slug": "welcome",
+   "preset": "welcome-offer",
+   "image": "https://images.unsplash.com/photo-1515860734122-e0d771b36d3e?w=600&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+   "label": "Welcome",
+   "headline": "10% off your first bag",
+   "subhead": "Join the list for new origins every month and brewing notes from the roastery.",
+   "button": "Get my 10% off",
+   "offer": "10% off the first order",
+   "terms": "One use per customer. Excludes subscriptions.",
+   "decline": "No thanks",
+   "success_headline": "Your code is ready",
+   "success_text": "It is on its way to your inbox too.",
+   "code": "HELLO10",
+   "teaser": "Get 10% off"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "library": {
+  "niche_key": "candles",
+  "niche": "Candles & Home Fragrance",
+  "alternates": [
+   "bold-retail",
+   "clean-tech",
+   "dark-premium",
+   "founder-letter",
+   "mono-brutal",
+   "natural-craft",
+   "plain-note",
+   "playful-color",
+   "quiet-luxury",
+   "retro-warm",
+   "soft-pop",
+   "text-only"
+  ]
+ },
+ "style": "editorial",
+ "utm_prefix": "candles",
+ "brand": {
+  "name": "Hearth Field",
+  "home_url": "https://hearthfield.test/",
+  "heading_stack": "'Playfair Display', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#F6F1EA",
+   "ink": "#2A2522",
+   "accent": "#2A2522",
+   "on_accent": "#F6F1EA"
+  }
+ },
+ "_alt": "natural-craft",
+ "emails": [
+  {
+   "slug": "candles",
+   "theme": "product-drop",
+   "subject": [
+    "The winter candles are lit",
+    "Cedar, clove and a little smoke"
+   ],
+   "preheader": "Two new scents, hand-poured in small batches.",
+   "idea": "candles demo",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "centered",
+     "links": [
+      {
+       "label": "Candles",
+       "url": "https://hearthfield.test/candles"
+      },
+      {
+       "label": "Home",
+       "url": "https://hearthfield.test/home"
+      },
+      {
+       "label": "Gifts",
+       "url": "https://hearthfield.test/gifts"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1646185994952-11fc67042488?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A lit candle on a wooden table",
+     "url": "https://hearthfield.test/winter"
+    },
+    {
+     "type": "hero_text",
+     "label": "Winter collection",
+     "headline": "Cedar, clove and a little smoke",
+     "subhead": "Two scents for long evenings, poured by hand in our studio."
+    },
+    {
+     "type": "products",
+     "items": [
+      {
+       "title": "Cedar Hearth",
+       "price": "$42",
+       "url": "https://hearthfield.test/cedar",
+       "src": "https://images.unsplash.com/photo-1643122966676-29e8597257f7?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "link_label": "Shop"
+      },
+      {
+       "title": "Glass Refill Jar",
+       "price": "$18",
+       "url": "https://hearthfield.test/clove",
+       "src": "https://images.unsplash.com/photo-1594813591867-02e797aa4581?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "link_label": "Shop"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop the collection",
+     "url": "https://hearthfield.test/winter"
+    },
+    {
+     "type": "quote",
+     "quote": "We pour every candle the way we would for our own home",
+     "author": "Ines",
+     "author_title": "founder"
+    },
+    {
+     "type": "link_list",
+     "items": [
+      {
+       "label": "Candles",
+       "url": "https://hearthfield.test/candles"
+      },
+      {
+       "label": "Diffusers",
+       "url": "https://hearthfield.test/diffusers"
+      },
+      {
+       "label": "Gift sets",
+       "url": "https://hearthfield.test/gifts"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Hearth Field list.",
+     "layout": "rich",
+     "note": "Hand-poured in small batches.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://hearthfield.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://hearthfield.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://hearthfield.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

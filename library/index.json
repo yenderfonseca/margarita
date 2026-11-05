@@ -1,0 +1,470 @@
+[
+ {
+  "id": "audio",
+  "niche_key": "audio",
+  "niche": "Audio & Smart Home",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "welcome",
+  "brand": "Halden Audio",
+  "subject": "Welcome to Halden Audio",
+  "preheader": "Thirty years of amplifiers, and what to listen to first.",
+  "style": "clean-tech",
+  "alternates": [
+   "dark-premium"
+  ],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "quote",
+   "products",
+   "cta",
+   "trust_row",
+   "footer"
+  ],
+  "spec": "specs/audio.json",
+  "previews": {
+   "clean-tech": "previews/audio.jpg",
+   "dark-premium": "previews/audio--dark-premium.jpg"
+  }
+ },
+ {
+  "id": "candles",
+  "niche_key": "candles",
+  "niche": "Candles & Home Fragrance",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "product-drop",
+  "brand": "Hearth Field",
+  "subject": "The winter candles are lit",
+  "preheader": "Two new scents, hand-poured in small batches.",
+  "style": "editorial",
+  "alternates": [
+   "bold-retail",
+   "clean-tech",
+   "dark-premium",
+   "founder-letter",
+   "mono-brutal",
+   "natural-craft",
+   "plain-note",
+   "playful-color",
+   "quiet-luxury",
+   "retro-warm",
+   "soft-pop",
+   "text-only"
+  ],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "products",
+   "cta",
+   "quote",
+   "link_list",
+   "footer"
+  ],
+  "spec": "specs/candles.json",
+  "previews": {
+   "editorial": "previews/candles.jpg",
+   "bold-retail": "previews/candles--bold-retail.jpg",
+   "clean-tech": "previews/candles--clean-tech.jpg",
+   "dark-premium": "previews/candles--dark-premium.jpg",
+   "founder-letter": "previews/candles--founder-letter.jpg",
+   "mono-brutal": "previews/candles--mono-brutal.jpg",
+   "natural-craft": "previews/candles--natural-craft.jpg",
+   "plain-note": "previews/candles--plain-note.jpg",
+   "playful-color": "previews/candles--playful-color.jpg",
+   "quiet-luxury": "previews/candles--quiet-luxury.jpg",
+   "retro-warm": "previews/candles--retro-warm.jpg",
+   "soft-pop": "previews/candles--soft-pop.jpg",
+   "text-only": "previews/candles--text-only.jpg"
+  }
+ },
+ {
+  "id": "coffee",
+  "niche_key": "coffee",
+  "niche": "Specialty Pantry / Coffee & Tea",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "product-drop",
+  "brand": "Ridgeline Roasters",
+  "subject": "Two new single origins just landed",
+  "preheader": "Washed Ethiopia for bright mornings, Burundi for the slow ones.",
+  "style": "natural-craft",
+  "alternates": [
+   "editorial"
+  ],
+  "blocks": [
+   "header",
+   "split_hero",
+   "products",
+   "cta",
+   "steps",
+   "trust_row",
+   "footer"
+  ],
+  "spec": "specs/coffee.json",
+  "previews": {
+   "natural-craft": "previews/coffee.jpg",
+   "editorial": "previews/coffee--editorial.jpg"
+  }
+ },
+ {
+  "id": "jewelry",
+  "niche_key": "jewelry",
+  "niche": "Jewelry",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "product-drop",
+  "brand": "Maren Fine",
+  "subject": "New: the link necklace, in 18k gold",
+  "preheader": "Solid 18k gold, made to be layered or worn alone.",
+  "style": "quiet-luxury",
+  "alternates": [
+   "dark-premium"
+  ],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "media_rows",
+   "cta",
+   "feature_grid",
+   "footer"
+  ],
+  "spec": "specs/jewelry.json",
+  "previews": {
+   "quiet-luxury": "previews/jewelry.jpg",
+   "dark-premium": "previews/jewelry--dark-premium.jpg"
+  }
+ },
+ {
+  "id": "audio-launch",
+  "niche_key": "audio",
+  "niche": "Audio & Smart Home",
+  "occasion": "launch",
+  "occasion_kind": "product",
+  "theme": "product-drop",
+  "brand": "Halden Audio",
+  "subject": "Meet Melo, our first earbuds",
+  "preheader": "Thirty years of amplifiers, now in your pocket. Out today.",
+  "style": "clean-tech",
+  "alternates": [],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "stats_row",
+   "feature_grid",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/occ-audio-launch.json",
+  "previews": {
+   "clean-tech": "previews/audio-launch.jpg"
+  }
+ },
+ {
+  "id": "candles-mothers-day-optout",
+  "niche_key": "candles",
+  "niche": "Candles & Home Fragrance",
+  "occasion": "mothers-day",
+  "occasion_kind": "calendar",
+  "theme": "announcement",
+  "brand": "Hearth Field",
+  "subject": "A quick question before Mother's Day",
+  "preheader": "Not everyone celebrates. One click and we will leave you out.",
+  "style": "editorial",
+  "alternates": [],
+  "blocks": [
+   "header",
+   "letter",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/occ-candles-mothers-day-optout.json",
+  "previews": {
+   "editorial": "previews/candles-mothers-day-optout.jpg"
+  }
+ },
+ {
+  "id": "coffee-welcome-1",
+  "niche_key": "coffee",
+  "niche": "Specialty Pantry / Coffee & Tea",
+  "occasion": "welcome",
+  "occasion_kind": "flows",
+  "theme": "welcome-offer",
+  "brand": "Ridgeline Roasters",
+  "subject": "Welcome to Ridgeline: 10% off your first bag",
+  "preheader": "Plus how we roast, and which coffee to start with.",
+  "style": "natural-craft",
+  "alternates": [],
+  "blocks": [
+   "header",
+   "hero_text",
+   "offer_code",
+   "cta",
+   "products",
+   "footer"
+  ],
+  "spec": "specs/occ-coffee-welcome-1.json",
+  "previews": {
+   "natural-craft": "previews/coffee-welcome-1.jpg"
+  }
+ },
+ {
+  "id": "jewelry-vip-early-access",
+  "niche_key": "jewelry",
+  "niche": "Jewelry",
+  "occasion": "vip-early-access",
+  "occasion_kind": "product",
+  "theme": "sale",
+  "brand": "Maren Fine",
+  "subject": "You are early: the link necklace opens today",
+  "preheader": "48 hours before everyone else. Opens now for our VIP list.",
+  "style": "dark-premium",
+  "alternates": [],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "story",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/occ-jewelry-vip-early-access.json",
+  "previews": {
+   "dark-premium": "previews/jewelry-vip-early-access.jpg"
+  }
+ },
+ {
+  "id": "pet-birthday",
+  "niche_key": "pet",
+  "niche": "Pet Supplies & Lifestyle",
+  "occasion": "birthday",
+  "occasion_kind": "relationship",
+  "theme": "welcome-offer",
+  "brand": "Tabby & Co",
+  "subject": "Happy birthday, {{ first_name|default:'friend' }}",
+  "preheader": "A free bag of treats with your next box, this week only.",
+  "style": "playful-color",
+  "alternates": [],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "offer_code",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/occ-pet-birthday.json",
+  "previews": {
+   "playful-color": "previews/pet-birthday.jpg"
+  }
+ },
+ {
+  "id": "streetwear-bfcm",
+  "niche_key": "streetwear",
+  "niche": "Streetwear",
+  "occasion": "bfcm",
+  "occasion_kind": "calendar",
+  "theme": "sale",
+  "brand": "Northside Supply",
+  "subject": "Black Friday: 25% off everything",
+  "preheader": "Code NORTHSIDE25 at checkout. Ends Monday, Nov 30 at midnight ET.",
+  "style": "bold-retail",
+  "alternates": [],
+  "blocks": [
+   "announcement",
+   "header",
+   "hero_text",
+   "offer_code",
+   "cta",
+   "products",
+   "trust_row",
+   "footer"
+  ],
+  "spec": "specs/occ-streetwear-bfcm.json",
+  "previews": {
+   "bold-retail": "previews/streetwear-bfcm.jpg"
+  }
+ },
+ {
+  "id": "outdoor",
+  "niche_key": "outdoor",
+  "niche": "Camping & Outdoor Gear",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "product-drop",
+  "brand": "Granite Line",
+  "subject": "New gear to outsmart the forecast",
+  "preheader": "Three-layer shells and insulated mids for the wet season.",
+  "style": "bold-retail",
+  "alternates": [
+   "natural-craft"
+  ],
+  "blocks": [
+   "announcement",
+   "header",
+   "hero_image",
+   "hero_text",
+   "media_rows",
+   "cta",
+   "trust_row",
+   "footer"
+  ],
+  "spec": "specs/outdoor.json",
+  "previews": {
+   "bold-retail": "previews/outdoor.jpg",
+   "natural-craft": "previews/outdoor--natural-craft.jpg"
+  }
+ },
+ {
+  "id": "pet",
+  "niche_key": "pet",
+  "niche": "Pet Supplies & Lifestyle",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "education",
+  "brand": "Tabby & Co",
+  "subject": "3 steps to a healthier cat",
+  "preheader": "Fresh food, the right portion and more water. A two-minute read.",
+  "style": "soft-pop",
+  "alternates": [
+   "playful-color"
+  ],
+  "blocks": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "steps",
+   "ingredients",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/pet.json",
+  "previews": {
+   "soft-pop": "previews/pet.jpg",
+   "playful-color": "previews/pet--playful-color.jpg"
+  }
+ },
+ {
+  "id": "skincare",
+  "niche_key": "skincare",
+  "niche": "Skincare (Clinical)",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "education",
+  "brand": "Lumen Skin",
+  "subject": "The ingredient your moisturizer is missing",
+  "preheader": "What they do, who needs them, and how to layer them tonight.",
+  "style": "clean-tech",
+  "alternates": [
+   "editorial"
+  ],
+  "blocks": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "feature_grid",
+   "quote",
+   "cta",
+   "footer"
+  ],
+  "spec": "specs/skincare.json",
+  "previews": {
+   "clean-tech": "previews/skincare.jpg",
+   "editorial": "previews/skincare--editorial.jpg"
+  }
+ },
+ {
+  "id": "spirits",
+  "niche_key": "spirits",
+  "niche": "Wine Beer & Spirits",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "brand-story",
+  "brand": "Ember & Oak",
+  "subject": "Fourteen years in a Kentucky rickhouse",
+  "preheader": "Our oldest release, bottled at cask strength. 600 bottles.",
+  "style": "dark-premium",
+  "alternates": [
+   "retro-warm"
+  ],
+  "blocks": [
+   "header",
+   "hero_image",
+   "hero_text",
+   "story",
+   "cta",
+   "disclaimer",
+   "footer"
+  ],
+  "spec": "specs/spirits.json",
+  "previews": {
+   "dark-premium": "previews/spirits.jpg",
+   "retro-warm": "previews/spirits--retro-warm.jpg"
+  }
+ },
+ {
+  "id": "streetwear",
+  "niche_key": "streetwear",
+  "niche": "Streetwear",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "product-drop",
+  "brand": "Northside Supply",
+  "subject": "Going quiet: the winter drop",
+  "preheader": "Twill jackets and double-knee pants. Drops Thursday at 10.",
+  "style": "mono-brutal",
+  "alternates": [
+   "bold-retail"
+  ],
+  "blocks": [
+   "announcement",
+   "header",
+   "hero_image",
+   "hero_text",
+   "products",
+   "cta",
+   "link_list",
+   "footer"
+  ],
+  "spec": "specs/streetwear.json",
+  "previews": {
+   "mono-brutal": "previews/streetwear.jpg",
+   "bold-retail": "previews/streetwear--bold-retail.jpg"
+  }
+ },
+ {
+  "id": "supplements",
+  "niche_key": "supplements",
+  "niche": "Supplements & Vitamins",
+  "occasion": null,
+  "occasion_kind": null,
+  "theme": "restock",
+  "brand": "Daily Roots",
+  "subject": "Digestion Drops are back in stock",
+  "preheader": "Back today. Two capsules after meals.",
+  "style": "natural-craft",
+  "alternates": [
+   "clean-tech"
+  ],
+  "blocks": [
+   "header",
+   "hero_text",
+   "hero_image",
+   "feature_grid",
+   "press_strip",
+   "cta",
+   "disclaimer",
+   "footer"
+  ],
+  "spec": "specs/supplements.json",
+  "previews": {
+   "natural-craft": "previews/supplements.jpg",
+   "clean-tech": "previews/supplements--clean-tech.jpg"
+  }
+ }
+]

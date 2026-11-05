@@ -1,0 +1,141 @@
+{
+ "library": {
+  "niche_key": "skincare",
+  "niche": "Skincare (Clinical)",
+  "alternates": [
+   "editorial"
+  ]
+ },
+ "style": "clean-tech",
+ "utm_prefix": "skincare",
+ "brand": {
+  "name": "Lumen Skin",
+  "home_url": "https://lumenskin.test/",
+  "heading_stack": "'DM Serif Display', Georgia, 'Times New Roman', serif",
+  "body_stack": "'DM Sans', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;700&family=DM+Sans:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#1E2A2B",
+   "accent": "#2F6F66",
+   "band": "#F7F3EC"
+  }
+ },
+ "_alt": "editorial",
+ "emails": [
+  {
+   "slug": "skincare",
+   "theme": "education",
+   "subject": [
+    "The ingredient your moisturizer is missing",
+    "Ceramides, explained in 60 seconds"
+   ],
+   "preheader": "What they do, who needs them, and how to layer them tonight.",
+   "idea": "skincare demo",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://lumenskin.test/shop"
+      },
+      {
+       "label": "Skin school",
+       "url": "https://lumenskin.test/skin-school"
+      }
+     ]
+    },
+    {
+     "type": "hero_text",
+     "label": "Skin school",
+     "headline": "Ceramides, explained",
+     "subhead": "They make up half of your skin barrier. Here is how to keep it that way."
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1667266543254-505cf5b16ec4?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "Two skincare bottles beside a round mirror",
+     "url": "https://lumenskin.test/barrier"
+    },
+    {
+     "type": "feature_grid",
+     "heading": "Why your barrier needs them",
+     "items": [
+      {
+       "title": "Holds water",
+       "text": "Less tightness by noon."
+      },
+      {
+       "title": "Calms",
+       "text": "Fewer red patches."
+      },
+      {
+       "title": "Layers well",
+       "text": "Works under SPF."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "quote": "Start with the barrier, then add actives",
+     "author": "Dr. A. Rivera",
+     "author_title": "consultant dermatologist"
+    },
+    {
+     "type": "cta",
+     "label": "Build my routine",
+     "url": "https://lumenskin.test/routine"
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Lumen Skin list.",
+     "layout": "rich",
+     "note": "Formulated with dermatologists.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://lumenskin.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://lumenskin.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://lumenskin.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ],
+ "popups": [
+  {
+   "slug": "newsletter",
+   "preset": "newsletter-no-offer",
+   "headline": "Skin school, every Sunday",
+   "subhead": "One ingredient explained each week. No spam, unsubscribe anytime.",
+   "button": "Join skin school",
+   "success_headline": "You are in",
+   "success_text": "Your first lesson arrives Sunday."
+  }
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "library": {
+  "niche_key": "streetwear",
+  "niche": "Streetwear",
+  "alternates": [
+   "bold-retail"
+  ]
+ },
+ "style": "mono-brutal",
+ "utm_prefix": "streetwear",
+ "brand": {
+  "name": "Northside Supply",
+  "home_url": "https://northsidesupply.test/",
+  "heading_stack": "'Archivo', Helvetica, Arial, sans-serif",
+  "body_stack": "'Karla', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Karla:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#111111",
+   "accent": "#111111",
+   "on_accent": "#FFFFFF",
+   "band": "#F4F4F4"
+  }
+ },
+ "_alt": "bold-retail",
+ "emails": [
+  {
+   "slug": "streetwear",
+   "theme": "product-drop",
+   "subject": [
+    "Going quiet: the winter drop",
+    "Workwear in black and olive"
+   ],
+   "preheader": "Twill jackets and double-knee pants. Drops Thursday at 10.",
+   "idea": "streetwear demo",
+   "blocks": [
+    {
+     "type": "announcement",
+     "text": "Free returns on all orders",
+     "url": "https://northsidesupply.test/returns"
+    },
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "New",
+       "url": "https://northsidesupply.test/new"
+      },
+      {
+       "label": "Men",
+       "url": "https://northsidesupply.test/men"
+      },
+      {
+       "label": "Women",
+       "url": "https://northsidesupply.test/women"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1721637635502-b0abaaa75edb?w=1200&h=1500&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A model in a dark jacket and cap on a city street",
+     "url": "https://northsidesupply.test/drop"
+    },
+    {
+     "type": "hero_text",
+     "label": "Winter 26",
+     "headline": "Going quiet",
+     "subhead": "Leather and heavy twill, triple stitched, nothing loud."
+    },
+    {
+     "type": "products",
+     "items": [
+      {
+       "title": "Bomber Jacket",
+       "price": "$198",
+       "url": "https://northsidesupply.test/jacket",
+       "src": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      },
+      {
+       "title": "Relaxed Denim",
+       "price": "$128",
+       "url": "https://northsidesupply.test/pant",
+       "src": "https://images.unsplash.com/photo-1637069585336-827b298fe84a?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop the drop",
+     "url": "https://northsidesupply.test/drop"
+    },
+    {
+     "type": "link_list",
+     "items": [
+      {
+       "label": "Men",
+       "url": "https://northsidesupply.test/men"
+      },
+      {
+       "label": "Women",
+       "url": "https://northsidesupply.test/women"
+      },
+      {
+       "label": "Accessories",
+       "url": "https://northsidesupply.test/acc"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Northside Supply list.",
+     "layout": "inverse",
+     "note": "Built to be worn in.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://northsidesupply.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://northsidesupply.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://northsidesupply.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ],
+ "popups": [
+  {
+   "slug": "early-access",
+   "preset": "holiday-early-access",
+   "image": "https://images.unsplash.com/photo-1721637635502-b0abaaa75edb?w=1200&h=1500&fit=crop&crop=entropy&fm=jpg&q=80",
+   "label": "Black Friday",
+   "headline": "Get in a day early",
+   "subhead": "The sale opens for this list on Thursday, Nov 26 at 10 am ET, a day before everyone else.",
+   "button": "Get early access",
+   "countdown_to": "Nov 26, 10 am ET",
+   "success_headline": "You are on the list",
+   "success_text": "We will email you Thursday, Nov 26 at 10 am ET.",
+   "teaser": "Black Friday early access"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "prompt": "Make a welcome series for https://example-brand.test, photos in ./assets, colors #1F1B16 #F5F1EA #A34A28",
+    "expected": "Prints MARGARITA_PREFLIGHT; picks the welcome flow from data/occasions.json (4 emails with delays); one primary CTA per email; every fact sourced or the block dropped; build, preflight and render all PASS; notes.md lists inferred elements",
+    "tests": "flow skeleton + fact law + one CTA + checks run"
+  },
+  {
+    "id": 2,
+    "prompt": "Show me email styles for my candle shop",
+    "expected": "Shows previews from library/INDEX.md first (style tour and the candles entry) without building; then builds the first real email in the 2 or 3 styles picked and runs gallery.py",
+    "tests": "library consulted before building + style choice loop"
+  },
+  {
+    "id": 3,
+    "prompt": "Black Friday email for this store, 20% off with code FRIDAY20, ends Sunday at midnight",
+    "expected": "Uses the real code and deadline verbatim in an offer_code block; no invented urgency or stock claims; subject under 50 characters; no em dashes",
+    "tests": "offer facts verbatim + house style + subject length"
+  },
+  {
+    "id": 4,
+    "prompt": "Launch email for our new supplement, link only, no photos",
+    "expected": "Text-led layout; supplements compliance from data/niches.csv (FDA disclaimer, no disease claims); logs every voice and product cue as inferred when the page does not state it",
+    "tests": "niche compliance + no-asset fallback + inferred log"
+  },
+  {
+    "id": 5,
+    "prompt": "Use the Hearth Field candles example for my brand",
+    "expected": "Borrows block order and style from library/specs/candles.json but replaces every product, price, review and photo with the real brand's; never ships demo copy or .test links",
+    "tests": "library is structure only, never facts"
+  },
+  {
+    "id": 6,
+    "prompt": "Design a welcome popup for my coffee brand with 10% off",
+    "expected": "Adds a popups entry (welcome-offer preset) to the spec, runs popup.py, delivers mockup.html and a Klaviyo build sheet; side image desktop only; success step shows the code",
+    "tests": "popup preset + build sheet"
+  }
+]

@@ -1,0 +1,139 @@
+{
+ "library": {
+  "niche_key": "outdoor",
+  "niche": "Camping & Outdoor Gear",
+  "alternates": [
+   "natural-craft"
+  ]
+ },
+ "style": "bold-retail",
+ "utm_prefix": "outdoor",
+ "brand": {
+  "name": "Granite Line",
+  "home_url": "https://graniteline.test/",
+  "heading_stack": "'Archivo', Helvetica, Arial, sans-serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#F2F0E9",
+   "ink": "#1C2321",
+   "accent": "#99642C",
+   "on_accent": "#FFFFFF",
+   "band": "#E5E3D9"
+  }
+ },
+ "_alt": "natural-craft",
+ "emails": [
+  {
+   "slug": "outdoor",
+   "theme": "product-drop",
+   "subject": [
+    "New gear to outsmart the forecast",
+    "Rain shells, tested on the ridge"
+   ],
+   "preheader": "Three-layer shells and insulated mids for the wet season.",
+   "idea": "outdoor demo",
+   "blocks": [
+    {
+     "type": "announcement",
+     "text": "Free shipping over $99"
+    },
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "Men",
+       "url": "https://graniteline.test/men"
+      },
+      {
+       "label": "Women",
+       "url": "https://graniteline.test/women"
+      },
+      {
+       "label": "Gear",
+       "url": "https://graniteline.test/gear"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1658296742588-df6218e30675?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "Green mountain ridges under a cloudy sky",
+     "url": "https://graniteline.test/fall"
+    },
+    {
+     "type": "hero_text",
+     "label": "New for fall",
+     "headline": "Outsmart the forecast",
+     "subhead": "Shells and mid layers built for days that change their mind."
+    },
+    {
+     "type": "media_rows",
+     "items": [
+      {
+       "src": "https://images.unsplash.com/photo-1530933760-343e767695cd?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "alt": "A hiker in an orange rain jacket laughing in the rain",
+       "title": "The 3L shell",
+       "text": "Seam-taped, 410 grams, made for wet ridges.",
+       "url": "https://graniteline.test/shell",
+       "link_label": "See the shell"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop fall gear",
+     "url": "https://graniteline.test/fall"
+    },
+    {
+     "type": "trust_row",
+     "items": [
+      {
+       "text": "Lifetime repairs"
+      },
+      {
+       "text": "30-day returns"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Granite Line list.",
+     "layout": "inverse",
+     "note": "Repairs for life.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://graniteline.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://graniteline.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://graniteline.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

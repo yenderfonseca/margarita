@@ -1,0 +1,4 @@
+interface:
+  display_name: Margarita
+  short_description: Finished, Klaviyo-ready brand emails from a link, photos and a palette
+  default_prompt: Use Margarita to make Klaviyo-ready emails for this brand.

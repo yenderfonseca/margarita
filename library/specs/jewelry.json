@@ -1,0 +1,145 @@
+{
+ "library": {
+  "niche_key": "jewelry",
+  "niche": "Jewelry",
+  "alternates": [
+   "dark-premium"
+  ]
+ },
+ "style": "quiet-luxury",
+ "utm_prefix": "jewelry",
+ "brand": {
+  "name": "Maren Fine",
+  "home_url": "https://marenfine.test/",
+  "heading_stack": "'Cormorant Garamond', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Montserrat', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#1A1A1A",
+   "accent": "#1A1A1A",
+   "on_accent": "#FFFFFF",
+   "band": "#F7F7F7"
+  }
+ },
+ "_alt": "dark-premium",
+ "emails": [
+  {
+   "slug": "jewelry",
+   "theme": "product-drop",
+   "subject": [
+    "New: the link necklace, in 18k gold",
+    "The necklace that goes with everything"
+   ],
+   "preheader": "Solid 18k gold, made to be layered or worn alone.",
+   "idea": "jewelry demo",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "centered",
+     "links": [
+      {
+       "label": "Necklaces",
+       "url": "https://marenfine.test/necklaces"
+      },
+      {
+       "label": "Bracelets",
+       "url": "https://marenfine.test/bracelets"
+      },
+      {
+       "label": "Watches",
+       "url": "https://marenfine.test/watches"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1704637397876-36235419309d?w=1200&h=1100&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "A gold necklace on a white table",
+     "url": "https://marenfine.test/chains"
+    },
+    {
+     "type": "hero_text",
+     "headline": "The link necklace, in 18k gold",
+     "subhead": "Solid gold links, made to be layered or worn alone."
+    },
+    {
+     "type": "media_rows",
+     "items": [
+      {
+       "src": "https://images.unsplash.com/photo-1722410180687-b05b50922362?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "alt": "A gold necklace and earring set on a display bust",
+       "title": "The set",
+       "text": "The 5mm link, sized for the wrist.",
+       "url": "https://marenfine.test/layer",
+       "link_label": "Shop the bracelet"
+      },
+      {
+       "src": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+       "alt": "A hand holding a watch with a leather strap",
+       "title": "With a watch",
+       "text": "Matched to our gold dial.",
+       "url": "https://marenfine.test/watch",
+       "link_label": "See the watch"
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Discover the chains",
+     "url": "https://marenfine.test/chains"
+    },
+    {
+     "type": "feature_grid",
+     "items": [
+      {
+       "title": "Free engraving"
+      },
+      {
+       "title": "Lifetime polish"
+      },
+      {
+       "title": "Gift wrapped"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Maren Fine list.",
+     "layout": "rich",
+     "note": "Solid gold, made to last.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://marenfine.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://marenfine.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://marenfine.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

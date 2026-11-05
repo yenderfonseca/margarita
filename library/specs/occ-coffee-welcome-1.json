@@ -1,0 +1,127 @@
+{
+ "library": {
+  "niche_key": "coffee",
+  "niche": "Specialty Pantry / Coffee & Tea",
+  "alternates": [],
+  "occasion": "welcome",
+  "occasion_kind": "flows"
+ },
+ "style": "natural-craft",
+ "utm_prefix": "coffee",
+ "brand": {
+  "name": "Ridgeline Roasters",
+  "home_url": "https://ridgelineroasters.test/",
+  "heading_stack": "'Fraunces', Georgia, 'Times New Roman', serif",
+  "body_stack": "'Work Sans', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FBF6EE",
+   "ink": "#2B2118",
+   "accent": "#8B5E34"
+  }
+ },
+ "emails": [
+  {
+   "slug": "coffee-welcome-1",
+   "theme": "welcome-offer",
+   "subject": [
+    "Welcome to Ridgeline: 10% off your first bag",
+    "Your first bag is 10% off"
+   ],
+   "preheader": "Plus how we roast, and which coffee to start with.",
+   "idea": "coffee-welcome-1",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "centered",
+     "links": [
+      {
+       "label": "Coffee",
+       "url": "https://ridgelineroasters.test/coffee"
+      },
+      {
+       "label": "Brew",
+       "url": "https://ridgelineroasters.test/brew"
+      },
+      {
+       "label": "Subscribe",
+       "url": "https://ridgelineroasters.test/subscribe"
+      }
+     ]
+    },
+    {
+     "type": "hero_text",
+     "greeting_default": "friend",
+     "label": "Welcome",
+     "headline": "Good coffee, roasted on Mondays",
+     "subhead": "Thanks for joining. Here is 10% off your first order."
+    },
+    {
+     "type": "offer_code",
+     "label": "Your welcome code",
+     "code": "HELLO10",
+     "terms": "10% off your first order, one use, no minimum."
+    },
+    {
+     "type": "cta",
+     "label": "Find my first coffee",
+     "url": "https://ridgelineroasters.test/start"
+    },
+    {
+     "type": "products",
+     "heading": "Where most people start",
+     "items": [
+      {
+       "title": "Ethiopia Banko",
+       "price": "$22",
+       "url": "https://ridgelineroasters.test/ethiopia",
+       "src": "https://images.unsplash.com/photo-1695245503558-5cdb37f49092?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      },
+      {
+       "title": "Burundi Campazi",
+       "price": "$21",
+       "url": "https://ridgelineroasters.test/burundi",
+       "src": "https://images.unsplash.com/photo-1562051036-e0eea191d42f?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Ridgeline Roasters list.",
+     "layout": "rich",
+     "note": "Roasted every Monday in small batches.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://ridgelineroasters.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://ridgelineroasters.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://ridgelineroasters.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

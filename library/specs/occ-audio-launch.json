@@ -1,0 +1,139 @@
+{
+ "library": {
+  "niche_key": "audio",
+  "niche": "Audio & Smart Home",
+  "alternates": [],
+  "occasion": "launch",
+  "occasion_kind": "product"
+ },
+ "style": "clean-tech",
+ "utm_prefix": "audio",
+ "brand": {
+  "name": "Halden Audio",
+  "home_url": "https://haldenaudio.test/",
+  "heading_stack": "'Space Grotesk', Helvetica, Arial, sans-serif",
+  "body_stack": "'Inter', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#111418",
+   "accent": "#D95E29",
+   "band": "#F3F4F5"
+  }
+ },
+ "emails": [
+  {
+   "slug": "audio-launch",
+   "theme": "product-drop",
+   "subject": [
+    "Meet Melo, our first earbuds",
+    "Melo: 32 hours, tuned by ear"
+   ],
+   "preheader": "Thirty years of amplifiers, now in your pocket. Out today.",
+   "idea": "audio-launch",
+   "blocks": [
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "Speakers",
+       "url": "https://haldenaudio.test/speakers"
+      },
+      {
+       "label": "Headphones",
+       "url": "https://haldenaudio.test/headphones"
+      }
+     ]
+    },
+    {
+     "type": "hero_image",
+     "src": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=1200&h=800&fit=crop&crop=entropy&fm=jpg&q=80",
+     "alt": "Melo earbuds on a lilac table",
+     "url": "https://haldenaudio.test/melo"
+    },
+    {
+     "type": "hero_text",
+     "label": "New",
+     "headline": "Meet Melo",
+     "subhead": "Our first earbuds, tuned in the same room as our amplifiers."
+    },
+    {
+     "type": "stats_row",
+     "items": [
+      {
+       "value": "32h",
+       "label": "With case"
+      },
+      {
+       "value": "IPX4",
+       "label": "Sweat proof"
+      },
+      {
+       "value": "$149",
+       "label": "Price"
+      }
+     ]
+    },
+    {
+     "type": "feature_grid",
+     "items": [
+      {
+       "title": "Tuned by ear",
+       "text": "Every pair checked."
+      },
+      {
+       "title": "Calm mode",
+       "text": "Noise down, voices clear."
+      },
+      {
+       "title": "2-year warranty",
+       "text": "Repairs included."
+      }
+     ]
+    },
+    {
+     "type": "cta",
+     "label": "Shop Melo",
+     "url": "https://haldenaudio.test/melo"
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Halden Audio list.",
+     "layout": "inverse",
+     "note": "Tuned by ear since 1994.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://haldenaudio.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://haldenaudio.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://haldenaudio.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}

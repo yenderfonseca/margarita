@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2 (2026-11-05)
+- The library ships inside the skill: 16 example emails from fictional demo brands (10 niches, 6 occasions
+  and flows), 37 previews including a tour of all 13 styles, `library/INDEX.md` and `library/index.json`.
+- `scripts/library.py`: `find` queries the library, `index` rebuilds its previews and catalog.
+- SKILL.md shows library previews before building when the user is choosing a look.
+- Fix: 2-column product grids failed to build. CI now builds every library spec.
+- `evals/test-prompts.json`, `agents/openai.yaml`, and install with `npx skills add yenderfonseca/margarita`.
+
 ## 2.1 (2026-11-05)
 - Runs in Claude Code, Claude.ai and Google Antigravity: every path is relative to the skill folder.
 - `--help` on every script.

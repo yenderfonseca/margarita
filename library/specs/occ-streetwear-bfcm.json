@@ -1,0 +1,145 @@
+{
+ "library": {
+  "niche_key": "streetwear",
+  "niche": "Streetwear",
+  "alternates": [],
+  "occasion": "bfcm",
+  "occasion_kind": "calendar"
+ },
+ "style": "bold-retail",
+ "utm_prefix": "streetwear",
+ "brand": {
+  "name": "Northside Supply",
+  "home_url": "https://northsidesupply.test/",
+  "heading_stack": "'Archivo', Helvetica, Arial, sans-serif",
+  "body_stack": "'Karla', Helvetica, Arial, sans-serif",
+  "fonts_link": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Karla:wght@400;600;700&display=swap",
+  "palette": {
+   "canvas": "#FFFFFF",
+   "ink": "#111111",
+   "accent": "#111111",
+   "on_accent": "#FFFFFF",
+   "band": "#F4F4F4"
+  }
+ },
+ "emails": [
+  {
+   "slug": "streetwear-bfcm",
+   "theme": "sale",
+   "subject": [
+    "Black Friday: 25% off everything",
+    "25% off until Monday night"
+   ],
+   "preheader": "Code NORTHSIDE25 at checkout. Ends Monday, Nov 30 at midnight ET.",
+   "idea": "streetwear-bfcm",
+   "blocks": [
+    {
+     "type": "announcement",
+     "text": "Black Friday: 25% off through Monday, Nov 30"
+    },
+    {
+     "type": "header",
+     "layout": "split",
+     "links": [
+      {
+       "label": "New",
+       "url": "https://northsidesupply.test/new"
+      },
+      {
+       "label": "Men",
+       "url": "https://northsidesupply.test/men"
+      },
+      {
+       "label": "Women",
+       "url": "https://northsidesupply.test/women"
+      }
+     ]
+    },
+    {
+     "type": "hero_text",
+     "label": "Black Friday",
+     "headline": "25% off everything",
+     "subhead": "Every jacket, pant and tee. Ends Monday, Nov 30 at midnight ET."
+    },
+    {
+     "type": "offer_code",
+     "label": "Your code",
+     "code": "NORTHSIDE25",
+     "terms": "25% off full-price items through Monday, Nov 30, 11:59 pm ET. One use per order."
+    },
+    {
+     "type": "cta",
+     "label": "Shop the sale",
+     "url": "https://northsidesupply.test/sale"
+    },
+    {
+     "type": "products",
+     "heading": "Most picked this week",
+     "items": [
+      {
+       "title": "Bomber Jacket",
+       "price": "$148",
+       "was_price": "$198",
+       "url": "https://northsidesupply.test/jacket",
+       "src": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      },
+      {
+       "title": "Relaxed Denim",
+       "price": "$96",
+       "was_price": "$128",
+       "url": "https://northsidesupply.test/pant",
+       "src": "https://images.unsplash.com/photo-1637069585336-827b298fe84a?w=800&h=800&fit=crop&crop=entropy&fm=jpg&q=80"
+      }
+     ]
+    },
+    {
+     "type": "trust_row",
+     "items": [
+      {
+       "text": "Free returns"
+      },
+      {
+       "text": "Ships in 2 days"
+      }
+     ]
+    },
+    {
+     "type": "footer",
+     "signup_reason": "You are getting this because you joined the Northside Supply list.",
+     "layout": "inverse",
+     "note": "Built to be worn in.",
+     "links": [
+      {
+       "label": "Shop",
+       "url": "https://northsidesupply.test/shop"
+      },
+      {
+       "label": "About",
+       "url": "https://northsidesupply.test/about"
+      },
+      {
+       "label": "Help",
+       "url": "https://northsidesupply.test/help"
+      }
+     ],
+     "social": [
+      {
+       "label": "Instagram",
+       "url": "https://instagram.com/"
+      },
+      {
+       "label": "TikTok",
+       "url": "https://tiktok.com/"
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "claim": "all copy",
+     "source": "fictional demo brand"
+    }
+   ]
+  }
+ ]
+}
