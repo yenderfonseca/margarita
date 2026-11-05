@@ -19,6 +19,10 @@ It runs in **Claude Code**, **Claude.ai** and **Google Antigravity**, and in any
 *One spec rendered in the 13 built-in styles, plus dark mode. The brand (Harbor & Kiln) is a demo
 and doesn't exist.*
 
+Prefer reading in a browser? The same instructions are on the website, in
+[English](https://margaritacreative.com/guides/margarita-email-designer-docs) and
+[Spanish](https://margaritacreative.com/es/guides/margarita-email-designer-docs).
+
 ---
 
 ## Contents
@@ -91,9 +95,13 @@ invoke it with `/margarita`.
 
 ### Claude.ai and the Claude desktop app
 
-1. Download this repository as a zip, or zip the folder yourself. The zip must contain the
-   `margarita/` folder with `SKILL.md` inside it.
-2. In **Settings > Capabilities**, turn on code execution, then upload the zip under **Skills**.
+1. In **Settings > Capabilities**, turn on code execution (**Code execution and file creation**,
+   or **Create and edit files** in the newer layout).
+2. Get the ready-to-upload zip from the
+   [Margarita Email Designer page](https://margaritacreative.com/resources/margarita-email-designer).
+   Or zip this folder yourself: the zip must contain the `margarita/` folder with `SKILL.md` inside it.
+3. Open **Customize > Skills**, click **+**, choose **Create skill**, then **Upload a skill**, and
+   select the zip.
 
 The build and lint scripts run in Claude's code sandbox. That sandbox may not include Playwright.
 If the render check can't run, Margarita says so in `notes.md`, and you review `preview.html` in
